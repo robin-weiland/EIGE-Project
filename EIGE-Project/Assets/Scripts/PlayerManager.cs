@@ -15,6 +15,7 @@ public class PlayerManager : MonoBehaviour
         rigidbody2D = GetComponent<Rigidbody2D>();
         rigidbody2D.freezeRotation = true;
         registerCommand(new PlayerMove());
+        registerCommand(new PlayerJump());
     }
 
     // Update is called once per frame
