@@ -18,7 +18,14 @@ public class PlayerManager : MonoBehaviour
         registerCommand(new PlayerJump());
     }
 
-    // Update is called once per frame
+    private void Update()
+    {
+        foreach (PlayerCommand command in commands)
+        {
+            command.run(this);
+        }
+    }
+
     void FixedUpdate()
     {
         foreach (PlayerCommand command in fixedCommands)
