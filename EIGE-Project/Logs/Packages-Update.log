@@ -45,3 +45,12 @@ The following packages were added:
   com.unity.modules.vr@1.0.0
   com.unity.modules.wind@1.0.0
   com.unity.modules.xr@1.0.0
+
+=== Fri Jan 10 15:08:38 2020
+
+Packages were changed.
+Update Mode: resetToDefaultDependencies
+
+The following packages were removed:
+  com.unity.2d.sprite@1.0.0
+  com.unity.2d.tilemap@1.0.0
