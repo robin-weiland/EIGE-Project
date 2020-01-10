@@ -19,7 +19,7 @@ changes in the [changelog](/changelog.txt) in  the Format:
 Generally we try to lean towards the [c# conventions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
 
 ### Player
- - **PlayerMovement** can be implemented by creating a new sript implementing the [inteface](EIGE-Project\Assets\Scripts\PlayerCommand.cs)
+ - **PlayerMovement** can be implemented by creating a new sript implementing the [inteface](EIGE-Project/Assets/Scripts/PlayerCommand.cs)
 
 
 ## Sprites
