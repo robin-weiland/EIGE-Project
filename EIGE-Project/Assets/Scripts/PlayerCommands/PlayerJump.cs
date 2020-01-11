@@ -8,7 +8,7 @@ public class PlayerJump : PlayerDualCommand
     private bool grounded;
     private bool isJumping;
 
-    public void run(PlayerManager player)
+    public override void run(PlayerManager player)
     {
         grounded = Physics2D.OverlapCircle(player.properties.feetPosition.position, player.properties.isGroundedCircleRadius, player.properties.isGround);
 
@@ -17,7 +17,7 @@ public class PlayerJump : PlayerDualCommand
         }
     }
 
-    public void fixedRun(PlayerManager player)
+    public override void fixedRun(PlayerManager player)
     {
         if (player.rigidbody2D.velocity.y < 0)
         {

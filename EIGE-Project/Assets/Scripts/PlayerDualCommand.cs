@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface PlayerDualCommand
+public abstract class PlayerDualCommand : PlayerCommand
 {
-    void run(PlayerManager player);
-
-    void fixedRun(PlayerManager player);
+    public abstract void fixedRun(PlayerManager player);
 }

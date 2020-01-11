@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMove : PlayerCommand
 {
     private bool facingLeft = true;
-    public void run(PlayerManager player)
+    public override void run(PlayerManager player)
     {
        player.rigidbody2D.velocity = new Vector2(player.properties.movementSpeed * Input.GetAxis("Horizontal"), player.rigidbody2D.velocity.y);
        if(player.rigidbody2D.velocity.x != 0)
