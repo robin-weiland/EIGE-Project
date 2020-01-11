@@ -39,7 +39,7 @@ public class PlayerManager : MonoBehaviour
         }
         foreach (PlayerDualCommand command in dualCommands)
         {
-            command.run(this);
+            command.fixedRun(this);
         }
     }
 
