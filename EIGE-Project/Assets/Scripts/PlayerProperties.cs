@@ -7,5 +7,7 @@ public class PlayerProperties
 {
     [SerializeField]
     public float movementSpeed;
-    
+    [Range(1, 10)]
+    public float jumpVelocity;
+
 }
