@@ -13,13 +13,15 @@ public class PlayerProperties
     public Transform feetPosition;
 
     public float isGroundedCircleRadius;
+    public LayerMask isGround;
 
     [Range(1, 10)]
     public float jumpVelocity;
 
-    public float maxJumpTime;
+    public float jumpUpMultiplier;
+    public float jumpDownMultiplier;
 
-    public LayerMask isGround;
+
 
 
 
