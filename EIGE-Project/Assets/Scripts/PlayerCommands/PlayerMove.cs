@@ -12,7 +12,11 @@ public class PlayerMove : PlayerCommand
         {
             player.GetComponent<Animator>().SetInteger("State", 1);
         }
-       if (Input.GetAxis("Horizontal") > 0 && facingLeft == false){
+        else
+        {
+            player.GetComponent<Animator>().SetInteger("State", 0);
+        }
+        if (Input.GetAxis("Horizontal") > 0 && facingLeft == false){
             facingLeft = true;
             player.rigidbody2D.transform.Rotate(0, 180, 0);
        }
