@@ -6,6 +6,7 @@ public class PlayerManager : MonoBehaviour
 {
     private List<PlayerCommand> fixedCommands = new List<PlayerCommand>();
     private List<PlayerCommand> commands = new List<PlayerCommand>();
+    private List<PlayerDualCommand> dualCommands = new List<PlayerDualCommand>();
     [SerializeField]
     public PlayerProperties properties = new PlayerProperties();
     public Rigidbody2D rigidbody2D { private set; get; }
@@ -24,11 +25,19 @@ public class PlayerManager : MonoBehaviour
         {
             command.run(this);
         }
+        foreach (PlayerDualCommand command in dualCommands)
+        {
+            command.run(this);
+        }
     }
 
     void FixedUpdate()
     {
         foreach (PlayerCommand command in fixedCommands)
+        {
+            command.run(this);
+        }
+        foreach (PlayerDualCommand command in dualCommands)
         {
             command.run(this);
         }
@@ -38,5 +47,10 @@ public class PlayerManager : MonoBehaviour
     {
         if (isFixed) fixedCommands.Add(command);
         else commands.Add(command);
+    }
+
+    private void registerCommand(PlayerDualCommand command)
+    {
+        dualCommands.Add(command);
     }
 }
