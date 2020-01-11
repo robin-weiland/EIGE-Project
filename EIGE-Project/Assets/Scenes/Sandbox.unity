@@ -304,7 +304,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1602288410
+--- !u!1 &720258365
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -312,27 +312,27 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1602288413}
-  - component: {fileID: 1602288412}
-  - component: {fileID: 1602288411}
+  - component: {fileID: 720258368}
+  - component: {fileID: 720258367}
+  - component: {fileID: 720258366}
   m_Layer: 0
-  m_Name: Cloud Jump Orb Sprite Sheet_0
+  m_Name: Cloud Jump Orb Sprite Sheet 1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &1602288411
+--- !u!95 &720258366
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1602288410}
+  m_GameObject: {fileID: 720258365}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 434cf69a2e453444fb479f295cfd50a0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5987e175c4f8c444fb4ba178e00c9fa6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -341,13 +341,13 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!212 &1602288412
+--- !u!212 &720258367
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1602288410}
+  m_GameObject: {fileID: 720258365}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -379,7 +379,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5197707449928750552, guid: 373d8b24b35599744a064217f33a0381,
+  m_Sprite: {fileID: 4903073308895712453, guid: ad24f13804d92fb419e1c75d5cdbfc54,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -391,19 +391,49 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1602288413
+--- !u!4 &720258368
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1602288410}
+  m_GameObject: {fileID: 720258365}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.81, y: -2.92, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 4.41, y: -1.49, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &775202887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 775202888}
+  m_Layer: 0
+  m_Name: FeetPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &775202888
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775202887}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8785756418039995380}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1855068666
 GameObject:
@@ -417,7 +447,7 @@ GameObject:
   - component: {fileID: 1855068669}
   - component: {fileID: 1855068668}
   - component: {fileID: 1855068667}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -520,8 +550,28 @@ PrefabInstance:
     - target: {fileID: 8785756417448322400, guid: abcaea7d06ac8da4e8dfa1758ca78d27,
         type: 3}
       propertyPath: properties.jumpVelocity
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8785756417448322400, guid: abcaea7d06ac8da4e8dfa1758ca78d27,
+        type: 3}
+      propertyPath: properties.jumpUpMultiplier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785756417448322400, guid: abcaea7d06ac8da4e8dfa1758ca78d27,
+        type: 3}
+      propertyPath: properties.jumpDownMultiplier
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785756417448322400, guid: abcaea7d06ac8da4e8dfa1758ca78d27,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785756417448322400, guid: abcaea7d06ac8da4e8dfa1758ca78d27,
+        type: 3}
+      propertyPath: properties.feetPosition
+      value: 
+      objectReference: {fileID: 775202888}
     - target: {fileID: 8785756417448322403, guid: abcaea7d06ac8da4e8dfa1758ca78d27,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -586,6 +636,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785756417448322431, guid: abcaea7d06ac8da4e8dfa1758ca78d27,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785756417448322431, guid: abcaea7d06ac8da4e8dfa1758ca78d27,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785756417448322431, guid: abcaea7d06ac8da4e8dfa1758ca78d27,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abcaea7d06ac8da4e8dfa1758ca78d27, type: 3}

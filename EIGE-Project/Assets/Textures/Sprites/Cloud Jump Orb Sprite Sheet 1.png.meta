@@ -1,97 +1,103 @@
 fileFormatVersion: 2
-guid: 373d8b24b35599744a064217f33a0381
+guid: ad24f13804d92fb419e1c75d5cdbfc54
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5197707449928750552
-    second: Cloud Jump Orb Sprite Sheet_0
+      213: 4903073308895712453
+    second: Cloud Jump Orb Sprite Sheet 1_0
   - first:
-      213: 7236724345727923011
-    second: Cloud Jump Orb Sprite Sheet_1
+      213: 7098428833028182616
+    second: Cloud Jump Orb Sprite Sheet 1_1
   - first:
-      213: -5158988154829248149
-    second: Cloud Jump Orb Sprite Sheet_2
+      213: -3193458723727574998
+    second: Cloud Jump Orb Sprite Sheet 1_2
   - first:
-      213: 8200962761478026866
-    second: Cloud Jump Orb Sprite Sheet_3
+      213: -1336632584745034151
+    second: Cloud Jump Orb Sprite Sheet 1_3
   - first:
-      213: -3510319907913935699
-    second: Cloud Jump Orb Sprite Sheet_4
+      213: -1593050894371337359
+    second: Cloud Jump Orb Sprite Sheet 1_4
   - first:
-      213: 8607572389994029797
-    second: Cloud Jump Orb Sprite Sheet_5
+      213: -4791161135704633847
+    second: Cloud Jump Orb Sprite Sheet 1_5
   - first:
-      213: -7248843771312031862
-    second: Cloud Jump Orb Sprite Sheet_6
+      213: -5912226036299514735
+    second: Cloud Jump Orb Sprite Sheet 1_6
   - first:
-      213: -484524510387267635
-    second: Cloud Jump Orb Sprite Sheet_7
+      213: 8872813756021223799
+    second: Cloud Jump Orb Sprite Sheet 1_7
   - first:
-      213: -8802906471628641344
-    second: Cloud Jump Orb Sprite Sheet_8
+      213: -6776740896698569498
+    second: Cloud Jump Orb Sprite Sheet 1_8
   - first:
-      213: 6483222289460761105
-    second: Cloud Jump Orb Sprite Sheet_9
+      213: -8537605513144898360
+    second: Cloud Jump Orb Sprite Sheet 1_9
   - first:
-      213: 3555003221433375701
-    second: Cloud Jump Orb Sprite Sheet_10
+      213: 2180492136127514427
+    second: Cloud Jump Orb Sprite Sheet 1_10
   - first:
-      213: 5908238523244665699
-    second: Cloud Jump Orb Sprite Sheet_11
+      213: -6495363509218270116
+    second: Cloud Jump Orb Sprite Sheet 1_11
   - first:
-      213: -7736498618291457183
-    second: Cloud Jump Orb Sprite Sheet_12
+      213: 1346294255227632939
+    second: Cloud Jump Orb Sprite Sheet 1_12
   - first:
-      213: 1205837533807677107
-    second: Cloud Jump Orb Sprite Sheet_13
+      213: 5229540475367381692
+    second: Cloud Jump Orb Sprite Sheet 1_13
   - first:
-      213: 7393942503101174129
-    second: Cloud Jump Orb Sprite Sheet_14
+      213: -767460491372533038
+    second: Cloud Jump Orb Sprite Sheet 1_14
   - first:
-      213: -2368289188302102317
-    second: Cloud Jump Orb Sprite Sheet_15
+      213: 3986993736733651580
+    second: Cloud Jump Orb Sprite Sheet 1_15
   - first:
-      213: 6404845552732643669
-    second: Cloud Jump Orb Sprite Sheet_16
+      213: -1379483823706185251
+    second: Cloud Jump Orb Sprite Sheet 1_16
   - first:
-      213: -2418402684989965723
-    second: Cloud Jump Orb Sprite Sheet_17
+      213: 8668490770593016125
+    second: Cloud Jump Orb Sprite Sheet 1_17
   - first:
-      213: -1618773384640657153
-    second: Cloud Jump Orb Sprite Sheet_18
+      213: -3779769836625622400
+    second: Cloud Jump Orb Sprite Sheet 1_18
   - first:
-      213: -4164330465809427335
-    second: Cloud Jump Orb Sprite Sheet_19
+      213: 8060557148058697295
+    second: Cloud Jump Orb Sprite Sheet 1_19
   - first:
-      213: 86455560001864126
-    second: Cloud Jump Orb Sprite Sheet_20
+      213: 1827426246690855824
+    second: Cloud Jump Orb Sprite Sheet 1_20
   - first:
-      213: -6471534793480729123
-    second: Cloud Jump Orb Sprite Sheet_21
+      213: -2807589163537047007
+    second: Cloud Jump Orb Sprite Sheet 1_21
   - first:
-      213: -719559487160134424
-    second: Cloud Jump Orb Sprite Sheet_22
+      213: 3298698494973596619
+    second: Cloud Jump Orb Sprite Sheet 1_22
   - first:
-      213: 6512778925412476064
-    second: Cloud Jump Orb Sprite Sheet_23
+      213: 5233571742845680949
+    second: Cloud Jump Orb Sprite Sheet 1_23
   - first:
-      213: -1260685331308404069
-    second: Cloud Jump Orb Sprite Sheet_24
+      213: -4774503968717774018
+    second: Cloud Jump Orb Sprite Sheet 1_24
   - first:
-      213: -4034830451464525176
-    second: Cloud Jump Orb Sprite Sheet_25
+      213: -5283364046294819259
+    second: Cloud Jump Orb Sprite Sheet 1_25
   - first:
-      213: 1299150250129331667
-    second: Cloud Jump Orb Sprite Sheet_26
+      213: 6300032612736411483
+    second: Cloud Jump Orb Sprite Sheet 1_26
   - first:
-      213: 8378109447859392289
-    second: Cloud Jump Orb Sprite Sheet_27
+      213: -7668604554097311751
+    second: Cloud Jump Orb Sprite Sheet 1_27
   - first:
-      213: -371760352224842444
-    second: Cloud Jump Orb Sprite Sheet_28
+      213: -6119447126063040217
+    second: Cloud Jump Orb Sprite Sheet 1_28
   - first:
-      213: 6017426857226843370
-    second: Cloud Jump Orb Sprite Sheet_29
+      213: -2538399618387639255
+    second: Cloud Jump Orb Sprite Sheet 1_29
+  - first:
+      213: -2180409037900552845
+    second: Cloud Jump Orb Sprite Sheet 1_30
+  - first:
+      213: -7779364629842312580
+    second: Cloud Jump Orb Sprite Sheet 1_31
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -176,7 +182,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_0
+      name: Cloud Jump Orb Sprite Sheet 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0299cd1a14825c46986a0688fd0f15d
+      internalID: 4903073308895712453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud Jump Orb Sprite Sheet 1_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c0770390255c34fbe46e846de56ac6
+      internalID: 7098428833028182616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud Jump Orb Sprite Sheet 1_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79a06d8a6b42954a836e9b5cf0c9657
+      internalID: -3193458723727574998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud Jump Orb Sprite Sheet 1_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94557313c76dfc24b8abfcd694f7b382
+      internalID: -1336632584745034151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud Jump Orb Sprite Sheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4c8c193aabf014f9db4e246507be5f
+      internalID: -1593050894371337359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud Jump Orb Sprite Sheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b121c955356b2844395976d7d65a4286
+      internalID: -4791161135704633847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud Jump Orb Sprite Sheet 1_6
       rect:
         serializedVersion: 2
         x: 0
@@ -190,14 +322,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2673dc6c176d75b4fa4dcd5ae2439ff3
-      internalID: 5197707449928750552
+      spriteID: b9a10dab3d116a5499f30a7141fd445f
+      internalID: -5912226036299514735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_1
+      name: Cloud Jump Orb Sprite Sheet 1_7
       rect:
         serializedVersion: 2
         x: 32
@@ -211,14 +343,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e75217a5b1a8a14485f2d403a489961
-      internalID: 7236724345727923011
+      spriteID: bf7223223c0d1ad4c87c3ef5fbe29d76
+      internalID: 8872813756021223799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_2
+      name: Cloud Jump Orb Sprite Sheet 1_8
       rect:
         serializedVersion: 2
         x: 64
@@ -232,14 +364,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d663b6781b9cefa4d855b776c4cf8f89
-      internalID: -5158988154829248149
+      spriteID: 082981bd378f0674ab9927fa90246a29
+      internalID: -6776740896698569498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_3
+      name: Cloud Jump Orb Sprite Sheet 1_9
       rect:
         serializedVersion: 2
         x: 96
@@ -253,14 +385,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d37ba91ffc95c7b4aa78be7b1e1d9d62
-      internalID: 8200962761478026866
+      spriteID: 55708371200420845b57ec08cc74907a
+      internalID: -8537605513144898360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_4
+      name: Cloud Jump Orb Sprite Sheet 1_10
       rect:
         serializedVersion: 2
         x: 128
@@ -274,14 +406,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1bcb506f0e76924e840313b5ed7cef7
-      internalID: -3510319907913935699
+      spriteID: 502119ef18a66b345887f6cabf306210
+      internalID: 2180492136127514427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_5
+      name: Cloud Jump Orb Sprite Sheet 1_11
       rect:
         serializedVersion: 2
         x: 160
@@ -295,14 +427,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c787545d909010f4e9a424084f596911
-      internalID: 8607572389994029797
+      spriteID: 7fc79ca602d6e2a4cb4b4ba477fd7dbd
+      internalID: -6495363509218270116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_6
+      name: Cloud Jump Orb Sprite Sheet 1_12
       rect:
         serializedVersion: 2
         x: 0
@@ -316,14 +448,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec08fdd3dcb20544a84b86640b9cf3d7
-      internalID: -7248843771312031862
+      spriteID: f428276e4b40f1a4ebf84152fcdddf78
+      internalID: 1346294255227632939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_7
+      name: Cloud Jump Orb Sprite Sheet 1_13
       rect:
         serializedVersion: 2
         x: 32
@@ -337,14 +469,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5b2769e7ad1451489318475d6eeb05d
-      internalID: -484524510387267635
+      spriteID: e159f8748f4b1094c8a5a97b9c7e2304
+      internalID: 5229540475367381692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_8
+      name: Cloud Jump Orb Sprite Sheet 1_14
       rect:
         serializedVersion: 2
         x: 64
@@ -358,14 +490,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3de9c54a858378a44b751ae87454588b
-      internalID: -8802906471628641344
+      spriteID: 8b4496da2473413469762100a094ebae
+      internalID: -767460491372533038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_9
+      name: Cloud Jump Orb Sprite Sheet 1_15
       rect:
         serializedVersion: 2
         x: 96
@@ -379,14 +511,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e134821e9c0c52748b9cd6a5bad34cfe
-      internalID: 6483222289460761105
+      spriteID: 572744a4d3bb9544f812c54b9ee789c0
+      internalID: 3986993736733651580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_10
+      name: Cloud Jump Orb Sprite Sheet 1_16
       rect:
         serializedVersion: 2
         x: 128
@@ -400,14 +532,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b745de3ade7bb9c438273a5ba08c3561
-      internalID: 3555003221433375701
+      spriteID: bcafba39661e6724191e5f755a7a8025
+      internalID: -1379483823706185251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_11
+      name: Cloud Jump Orb Sprite Sheet 1_17
       rect:
         serializedVersion: 2
         x: 160
@@ -421,14 +553,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae001ad5d208c4a44a75f296edaa2c88
-      internalID: 5908238523244665699
+      spriteID: d849103d9a4457347a90efdef1295628
+      internalID: 8668490770593016125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_12
+      name: Cloud Jump Orb Sprite Sheet 1_18
       rect:
         serializedVersion: 2
         x: 0
@@ -442,14 +574,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02051c9b061bbd04d9ffdf18765a6e82
-      internalID: -7736498618291457183
+      spriteID: 2e2d3d071d38f424783f781ea04ba2d6
+      internalID: -3779769836625622400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_13
+      name: Cloud Jump Orb Sprite Sheet 1_19
       rect:
         serializedVersion: 2
         x: 32
@@ -463,14 +595,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d87e1903bf6c3dc49859a380f979b50c
-      internalID: 1205837533807677107
+      spriteID: c6d0415105052fb40bfa5cecec9034cc
+      internalID: 8060557148058697295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_14
+      name: Cloud Jump Orb Sprite Sheet 1_20
       rect:
         serializedVersion: 2
         x: 64
@@ -484,14 +616,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02c05990c093cfb42aed41e3a1a1a70d
-      internalID: 7393942503101174129
+      spriteID: 02e468d7890d3c849839922ebe5a1c2a
+      internalID: 1827426246690855824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_15
+      name: Cloud Jump Orb Sprite Sheet 1_21
       rect:
         serializedVersion: 2
         x: 96
@@ -505,14 +637,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3cb1420a5360af42a6d57b440bf1404
-      internalID: -2368289188302102317
+      spriteID: d23a0accf4341b94cb38fe36258bcff8
+      internalID: -2807589163537047007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_16
+      name: Cloud Jump Orb Sprite Sheet 1_22
       rect:
         serializedVersion: 2
         x: 128
@@ -526,14 +658,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fd925667dd105a4c9394d26771405ca
-      internalID: 6404845552732643669
+      spriteID: 303988fc7421d2544b8bfe47d082ddc6
+      internalID: 3298698494973596619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_17
+      name: Cloud Jump Orb Sprite Sheet 1_23
       rect:
         serializedVersion: 2
         x: 160
@@ -547,14 +679,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91f1ca8dfe0b21442870bc877bb9bee6
-      internalID: -2418402684989965723
+      spriteID: b8980392c90a3a9488d1986ea36f7784
+      internalID: 5233571742845680949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_18
+      name: Cloud Jump Orb Sprite Sheet 1_24
       rect:
         serializedVersion: 2
         x: 0
@@ -568,14 +700,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c15ccb66e1da46943af12629ce95252f
-      internalID: -1618773384640657153
+      spriteID: afd4b7d8f3d44a341a84a6c8eede8126
+      internalID: -4774503968717774018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_19
+      name: Cloud Jump Orb Sprite Sheet 1_25
       rect:
         serializedVersion: 2
         x: 32
@@ -589,14 +721,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d8c4a8c965d80c4a93808b91873c163
-      internalID: -4164330465809427335
+      spriteID: 8934e513510603c4da0aadfa6fc40c2c
+      internalID: -5283364046294819259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_20
+      name: Cloud Jump Orb Sprite Sheet 1_26
       rect:
         serializedVersion: 2
         x: 64
@@ -610,14 +742,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4582ca33963099f498af2c98c431e9f1
-      internalID: 86455560001864126
+      spriteID: cf1fbd59eb4e83a45b3bebfc0d26e1b1
+      internalID: 6300032612736411483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_21
+      name: Cloud Jump Orb Sprite Sheet 1_27
       rect:
         serializedVersion: 2
         x: 96
@@ -631,14 +763,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a4981c2bf44b89418e0483c8ddae317
-      internalID: -6471534793480729123
+      spriteID: 88f82dcc70cdf434bb3265f425d4a358
+      internalID: -7668604554097311751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_22
+      name: Cloud Jump Orb Sprite Sheet 1_28
       rect:
         serializedVersion: 2
         x: 128
@@ -652,14 +784,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f307d9cb30866de4eb6f36458fab19d6
-      internalID: -719559487160134424
+      spriteID: 98c6e853983bc7b4c9da2bcd7ae19d56
+      internalID: -6119447126063040217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_23
+      name: Cloud Jump Orb Sprite Sheet 1_29
       rect:
         serializedVersion: 2
         x: 160
@@ -673,14 +805,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1971b9c21aa9dfe41b6d9d415c0f440a
-      internalID: 6512778925412476064
+      spriteID: d7a78d8c9a77f98418a73b7c727fdb01
+      internalID: -2538399618387639255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_24
+      name: Cloud Jump Orb Sprite Sheet 1_30
       rect:
         serializedVersion: 2
         x: 0
@@ -694,14 +826,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa505531d2c0d72429b035e98f313679
-      internalID: -1260685331308404069
+      spriteID: a118380a372433644a974510cd88c580
+      internalID: -2180409037900552845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_25
+      name: Cloud Jump Orb Sprite Sheet 1_31
       rect:
         serializedVersion: 2
         x: 32
@@ -715,92 +847,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb07fc5b99bb51b498b6e5a2215fab55
-      internalID: -4034830451464525176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_26
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0653ea90f29b244b8d21b95d6f38994
-      internalID: 1299150250129331667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_27
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03fb4ceb6676385439a2cda0d15c5eac
-      internalID: 8378109447859392289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_28
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74e59aee5b4acbc4fac038d09fab3114
-      internalID: -371760352224842444
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cloud Jump Orb Sprite Sheet_29
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc3727ad446ad6e4599785f0ce920fdf
-      internalID: 6017426857226843370
+      spriteID: f3b5cff3ce9f95448a3a70cd94c44a21
+      internalID: -7779364629842312580
       vertices: []
       indices: 
       edges: []
