@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface PlayerCommand
+public abstract class PlayerCommand
 {
-    void run(PlayerManager player);
+    public bool enabled = true;
+
+    public abstract void run(PlayerManager player);
+
 }
