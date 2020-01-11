@@ -12,35 +12,20 @@ public class PlayerJump : PlayerDualCommand
     {
         grounded = Physics2D.OverlapCircle(player.properties.feetPosition.position, player.properties.isGroundedCircleRadius, player.properties.isGround);
 
-        if (grounded) {
-            jumpTimeCounter = player.properties.maxJumpTime;
+        if (Input.GetButtonDown("Jump") && grounded) {
+            player.rigidbody2D.velocity = Vector2.up * player.properties.jumpVelocity;
         }
     }
 
     public void fixedRun(PlayerManager player)
     {
-        if (Input.GetButtonDown("Jump"))
+        if (player.rigidbody2D.velocity.y < 0)
         {
-            if (grounded)
-            {
-                player.rigidbody2D.velocity = new Vector2(player.rigidbody2D.velocity.x, player.properties.jumpVelocity);
-                isJumping = true;
-            }
+            player.rigidbody2D.velocity += Vector2.up * Physics2D.gravity.y * player.properties.jumpDownMultiplier * Time.deltaTime;
         }
-
-        if (Input.GetButton("Jump") && isJumping) { 
-            if(jumpTimeCounter > 0) {
-                player.rigidbody2D.velocity = new Vector2(player.rigidbody2D.velocity.x, player.properties.jumpVelocity);
-                jumpTimeCounter -= Time.deltaTime;
-            }
+        else if (player.rigidbody2D.velocity.y > 0 && !Input.GetButton("Jump"))
+        {
+            player.rigidbody2D.velocity += Vector2.up * Physics2D.gravity.y * player.properties.jumpUpMultiplier * Time.deltaTime;
         }
-
-        if (Input.GetButtonUp("Jump")) {
-            isJumping = false;
-            jumpTimeCounter = 0;
-        }
-
-
-
     }
 }
