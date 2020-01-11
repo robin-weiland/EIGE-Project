@@ -6,6 +6,8 @@ public class PlayerJump : PlayerCommand
 {
     public void run(PlayerManager player)
     {
-        //TODO
+        if (Input.GetButtonDown("Jump")) {
+            player.GetComponent<Rigidbody2D>().velocity = Vector2.up * player.properties.jumpVelocity;
+        }
     }
 }
