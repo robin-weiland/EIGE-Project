@@ -21,8 +21,8 @@ public class PlayerProperties
     public float jumpUpMultiplier;
     public float jumpDownMultiplier;
 
-
-
+    // Orb
+    public OrbBehavior currentOrb; 
 
 
 }
