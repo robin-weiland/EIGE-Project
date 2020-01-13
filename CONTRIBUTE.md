@@ -20,6 +20,13 @@ Generally we try to lean towards the [c# conventions](https://docs.microsoft.com
 
 ### Player
  - **PlayerMovement** can be implemented by creating a new sript implementing the [inteface](EIGE-Project/Assets/Scripts/PlayerCommand.cs)
+ 
+### Camera
+ - **CameraShake** by calling CameraShake.Shake(duration, amount); staticly from anywhere
+ 
+ 
+### Misc
+ - **Measure Distances** by attaching DistanceMeasurement to an object and set its paramenters or call DistanceMeasurement.Get(gameobject, gameobject); to get distances on the fly
 
 
 ## Sprites
