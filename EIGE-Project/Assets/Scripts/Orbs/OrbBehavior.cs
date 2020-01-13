@@ -13,8 +13,8 @@ public class OrbBehavior : MonoBehaviour
 
     public PedestalBehavior currentPedestal;
 
-    [SerializeField]
     private int current = 20;
+    [SerializeField]
     private int cooldown = 5;
 
     // Start is called before the first frame update
