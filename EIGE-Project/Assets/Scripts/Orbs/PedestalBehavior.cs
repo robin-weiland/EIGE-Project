@@ -17,6 +17,7 @@ public class PedestalBehavior : MonoBehaviour
     {
         if (Input.GetKeyDown("e") && currentPlayer != null && currentPlayer.properties.currentOrb != null)
         {
+            CameraShake.Shake(0.4f, 0.25f);
             BoxCollider2D orbCollider = currentPlayer.properties.currentOrb.GetComponent<BoxCollider2D>();
             BoxCollider2D currentCollider = GetComponent<BoxCollider2D>();
             currentPlayer.properties.currentOrb.drop(new Vector3(

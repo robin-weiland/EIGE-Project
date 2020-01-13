@@ -10,6 +10,9 @@ public class PlayerManager : MonoBehaviour
     [SerializeField]
     public PlayerProperties properties = new PlayerProperties();
     public Rigidbody2D rigidbody2D { private set; get; }
+    
+    // Don't know whether this belongs in this script or somewhere else, feel free to move it:
+    public Transform spawnPoint;
 
     void Start()
     {
@@ -18,6 +21,8 @@ public class PlayerManager : MonoBehaviour
 
         registerCommand(new PlayerMove());
         registerCommand(new PlayerJump());
+        
+        Spawn();
     }
 
     private void Update()
@@ -64,5 +69,10 @@ public class PlayerManager : MonoBehaviour
             if (typeof(T).IsInstanceOfType(command)) return command;
         }
         return null;
+    }
+
+    void Spawn()
+    {
+        transform.position = spawnPoint.position;
     }
 }
