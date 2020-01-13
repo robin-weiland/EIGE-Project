@@ -1,26 +1,16 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class DistanceMeasurement : MonoBehaviour
 {
-    private float _startEndDistance;
-    public GameObject start, end;
+    public GameObject other;
 
-    // Update is called once per frame
-    private void Update()
+    public float Get()
     {
-        _startEndDistance = Vector2.Distance(start.transform.position, end.transform.position);
+        return Vector2.Distance(transform.position, other.transform.position);
     }
     
     public static float Get(GameObject start, GameObject end)
     {
         return Vector2.Distance(start.transform.position, end.transform.position);
-    }
-
-    public float Get()
-    {
-        return _startEndDistance;
     }
 }
