@@ -11,6 +11,8 @@ public class OrbBehavior : MonoBehaviour
     private bool playerInRange = false;
     private PlayerManager currentPlayer;
 
+    public PedestalBehavior currentPedestal;
+
     [SerializeField]
     private int current = 20;
     private int cooldown = 5;
@@ -41,14 +43,20 @@ public class OrbBehavior : MonoBehaviour
                 pickedUp = true;
                 foreach (Transform child in transform)
                     child.gameObject.SetActive(false);
+                if (currentPedestal != null)
+                {
+                    currentPedestal.hasOrb = false;
+                    currentPedestal = null;
+                }
             }
         }
     }
 
-    public void drop(Vector3 position)
+    public void drop(Vector3 position, PedestalBehavior pedestal)
     {
         if (pickedUp && current == 0)
         {
+
             transform.position = position;
             mechanic.onDrop(currentPlayer);
             currentPlayer.properties.currentOrb = null;
@@ -58,6 +66,8 @@ public class OrbBehavior : MonoBehaviour
             current = cooldown;
             foreach (Transform child in transform)
                 child.gameObject.SetActive(true);
+            currentPedestal = pedestal;
+            pedestal.hasOrb = true;
         }
     }
 
