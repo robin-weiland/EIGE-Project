@@ -2,4 +2,4 @@
 EIGE-Project repo
 
 
-#  [Contribute](/CONTRIBUTE.md)
+#  [Contribute](/CONTRIBUTING.md)
