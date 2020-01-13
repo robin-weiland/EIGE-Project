@@ -11,7 +11,7 @@ public class OrbMechanic
 
     public virtual void onPickup(PlayerManager player)
     {
-
+        CameraShake.Shake(0.4f, 0.25f);
     }
 
     public virtual void holdingUpdate(PlayerManager player)
@@ -21,6 +21,6 @@ public class OrbMechanic
 
     public virtual void onDrop(PlayerManager player)
     {
-
+        CameraShake.Shake(0.4f, 0.25f);
     }
 }

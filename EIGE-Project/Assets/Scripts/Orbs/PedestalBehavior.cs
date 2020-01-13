@@ -5,6 +5,8 @@ using UnityEngine;
 public class PedestalBehavior : MonoBehaviour
 {
     PlayerManager currentPlayer;
+    [SerializeField]
+    public bool hasOrb = true;
 
     // Start is called before the first frame update
     void Start()
@@ -15,15 +17,15 @@ public class PedestalBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("e") && currentPlayer != null && currentPlayer.properties.currentOrb != null)
+        // Pickup
+        if (Input.GetKeyDown("e") && currentPlayer != null && currentPlayer.properties.currentOrb != null && !hasOrb)
         {
-            CameraShake.Shake(0.4f, 0.25f);
             BoxCollider2D orbCollider = currentPlayer.properties.currentOrb.GetComponent<BoxCollider2D>();
             BoxCollider2D currentCollider = GetComponent<BoxCollider2D>();
             currentPlayer.properties.currentOrb.drop(new Vector3(
                 transform.position.x, 
                 transform.position.y + currentCollider.size.y * transform.localScale.y / 2 + orbCollider.size.y * currentPlayer.properties.currentOrb.transform.localScale.y / 2, 
-                transform.position.z));
+                transform.position.z), this);
         }
     }
 
