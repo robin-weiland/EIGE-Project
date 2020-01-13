@@ -22,7 +22,8 @@ public class PlayerProperties
     public float jumpDownMultiplier;
 
     // Orb
-    public OrbBehavior currentOrb; 
+    public OrbBehavior currentOrb;
 
-
+    // Respawn
+    public Transform spawnPoint;
 }

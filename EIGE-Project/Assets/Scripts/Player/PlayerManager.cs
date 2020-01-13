@@ -9,10 +9,7 @@ public class PlayerManager : MonoBehaviour
     private List<PlayerDualCommand> dualCommands = new List<PlayerDualCommand>();
     [SerializeField]
     public PlayerProperties properties = new PlayerProperties();
-    public Rigidbody2D rigidbody2D { private set; get; }
-    
-    // Don't know whether this belongs in this script or somewhere else, feel free to move it:
-    public Transform spawnPoint;
+    public new Rigidbody2D rigidbody2D { private set; get; }
 
     void Start()
     {
@@ -73,6 +70,6 @@ public class PlayerManager : MonoBehaviour
 
     void Spawn()
     {
-        transform.position = spawnPoint.position;
+        transform.position = properties.spawnPoint.position;
     }
 }
