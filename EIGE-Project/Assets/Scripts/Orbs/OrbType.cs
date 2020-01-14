@@ -4,5 +4,5 @@ using UnityEngine;
 
 public enum OrbType
 {
-    Test, Light
+    Test, Light, NoEffect
 }

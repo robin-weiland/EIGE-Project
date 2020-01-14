@@ -6,7 +6,7 @@ public class OrbBehavior : MonoBehaviour
 {
     public OrbMechanic mechanic;
     [SerializeField]
-    public OrbType type;
+    public OrbType type = OrbType.NoEffect;
     private bool pickedUp = false;
     private bool playerInRange = false;
     private PlayerManager currentPlayer;
