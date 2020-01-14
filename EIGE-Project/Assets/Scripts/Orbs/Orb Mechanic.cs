@@ -34,7 +34,8 @@ public class OrbMechanic
                 return new TestMechanic();
             case OrbType.Light:
                 return new LightMechanic();
+            default:
+                return new OrbMechanic();
         }
-        return new OrbMechanic();
     }
 }
