@@ -13,11 +13,11 @@ public class PlayerMove : PlayerCommand
         player.GetComponent<Animator>().SetFloat("Speed", Mathf.Abs(player.rigidbody2D.velocity.x)*10);
         if (Input.GetAxis("Horizontal") > 0 && facingLeft == false){
             facingLeft = true;
-            player.rigidbody2D.transform.Rotate(0, 180, 0);
+            player.GetComponent<SpriteRenderer>().flipX = false;
         }
         else if (Input.GetAxis("Horizontal") < 0&& facingLeft == true) {
             facingLeft = false;
-            player.rigidbody2D.transform.Rotate(0, 180, 0);
+            player.GetComponent<SpriteRenderer>().flipX = true;
         }
     }
 }
