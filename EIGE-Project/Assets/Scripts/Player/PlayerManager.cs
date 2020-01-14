@@ -28,6 +28,7 @@ public class PlayerManager : MonoBehaviour
         {
             if (command.enabled) command.run(this);
         }
+        if (properties.currentOrb != null) properties.currentOrb.mechanic.holdingUpdate(this);
     }
 
     void FixedUpdate()
@@ -40,7 +41,7 @@ public class PlayerManager : MonoBehaviour
         {
             if (command.enabled) command.fixedRun(this);
         }
-        if (properties.currentOrb != null) properties.currentOrb.mechanic.holdingUpdate(this);
+        if (properties.currentOrb != null) properties.currentOrb.mechanic.holdingFixedUpdate(this);
     }
 
     private void registerCommand(PlayerCommand command, bool isFixed = true)
