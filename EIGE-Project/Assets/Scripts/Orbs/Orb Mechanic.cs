@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class OrbMechanic
 {
-    public OrbMechanic(OrbType type)
+    public OrbMechanic()
     {
-
     }
 
     public virtual void onPickup(PlayerManager player)
     {
-        CameraShake.Shake(0.4f, 0.25f);
+    }
+
+    public virtual void holdingFixedUpdate(PlayerManager player)
+    {
+
     }
 
     public virtual void holdingUpdate(PlayerManager player)
@@ -21,6 +24,15 @@ public class OrbMechanic
 
     public virtual void onDrop(PlayerManager player)
     {
-        CameraShake.Shake(0.4f, 0.25f);
+    }
+
+    public static OrbMechanic GetOrbMechanic(OrbType type)
+    {
+        switch (type)
+        {
+            case OrbType.Test:
+                return new TestMechanic();
+        }
+        return new OrbMechanic();
     }
 }

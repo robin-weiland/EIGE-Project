@@ -20,7 +20,7 @@ public class OrbBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mechanic = new OrbMechanic(type);
+        mechanic = OrbMechanic.GetOrbMechanic(type);
     }
 
     private void Update()
@@ -35,6 +35,7 @@ public class OrbBehavior : MonoBehaviour
         if (!pickedUp) {
             if (Input.GetKeyDown("e") && playerInRange && current == 0 && currentPlayer.properties.currentOrb == null)
             {
+                CameraShake.Shake(0.4f, 0.25f);
                 currentPlayer.properties.currentOrb = this;
                 GetComponent<BoxCollider2D>().enabled = false;
                 GetComponent<SpriteRenderer>().enabled = false;
@@ -56,7 +57,7 @@ public class OrbBehavior : MonoBehaviour
     {
         if (pickedUp && current == 0)
         {
-
+            CameraShake.Shake(0.4f, 0.25f);
             transform.position = position;
             mechanic.onDrop(currentPlayer);
             currentPlayer.properties.currentOrb = null;
