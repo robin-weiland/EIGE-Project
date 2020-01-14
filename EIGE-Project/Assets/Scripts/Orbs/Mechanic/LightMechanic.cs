@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class LightMechanic : OrbMechanic
 {
-    private Light light;
     public override void onDrop(PlayerManager player)
     {
-        light = player.GetComponentInChildren<Light>(true);
-        light.enabled = false;
+        player.GetComponentInChildren<Light>().enabled = false;
     }
 
     public override void onPickup(PlayerManager player)
     {
-        light = player.GetComponentInChildren<Light>(false);
-        light.enabled = true;
+        player.GetComponentInChildren<Light>().enabled = true;
     }
 
     public override void holdingUpdate(PlayerManager player)
