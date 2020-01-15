@@ -2079,7 +2079,7 @@ PrefabInstance:
     - target: {fileID: 1624261398348758292, guid: abcaea7d06ac8da4e8dfa1758ca78d27,
         type: 3}
       propertyPath: m_Name
-      value: Point Light
+      value: Light
       objectReference: {fileID: 0}
     - target: {fileID: 6470267445765829594, guid: abcaea7d06ac8da4e8dfa1758ca78d27,
         type: 3}
