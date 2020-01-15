@@ -1,22 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LightMechanic : OrbMechanic
 {
     private GameObject light;
+    private int child_index = 1;  // probably has to stay one
     public override void onDrop(PlayerManager player)
     {
-        player.gameObject.GetComponentInChildren<Light>().gameObject.SetActive(false);
-        //light = GameObject.Find("Player/Light");
-        //light.gameObject.SetActive(false);
+        // Watch out if we change/add children we might have to change the index here as well, same in the method below
+        player.transform.GetChild(child_index).gameObject.SetActive(false);
     }
 
     public override void onPickup(PlayerManager player)
     {
-        player.gameObject.GetComponentInChildren<Light>().gameObject.SetActive(true);
-        //light = GameObject.Find("Player/Light");
-        //light.gameObject.SetActive(true);
+        player.transform.GetChild(child_index).gameObject.SetActive(true);
     }
 
     public override void holdingUpdate(PlayerManager player)
