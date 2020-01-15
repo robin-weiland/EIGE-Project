@@ -6,12 +6,13 @@ public class LightMechanic : OrbMechanic
 {
     public override void onDrop(PlayerManager player)
     {
-        player.GetComponentInChildren<Light>().enabled = false;
+        player.GetComponentInChildren<Light>().gameObject.SetActive(false);
     }
 
     public override void onPickup(PlayerManager player)
     {
-        player.GetComponentInChildren<Light>().enabled = true;
+
+        player.GetComponentInChildren<Light>().gameObject.SetActive(true);
     }
 
     public override void holdingUpdate(PlayerManager player)
