@@ -7,11 +7,14 @@ public class PlayerProperties
 {
     //Move
     [SerializeField]
+    [Header("Movement")]
     public float movementSpeed;
 
     //Jump
+    [Header("Jump")]
     public Transform feetPosition;
-
+    
+    
     public float isGroundedCircleRadius;
     public LayerMask isGround;
 
@@ -22,8 +25,10 @@ public class PlayerProperties
     public float jumpDownMultiplier;
 
     // Orb
+    [Header("Orb")]
     public OrbBehavior currentOrb;
 
     // Respawn
+    [Header("Spawn")]
     public Transform spawnPoint;
 }
