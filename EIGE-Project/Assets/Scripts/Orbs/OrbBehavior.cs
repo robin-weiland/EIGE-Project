@@ -62,6 +62,7 @@ public class OrbBehavior : MonoBehaviour
         {
             Camera.Shake(0.4f, 0.25f);
             mechanic.onDrop(currentPlayer);
+            pedestal.onOrbAdd(this);
             currentPlayer.properties.currentOrb = null;
             GetComponent<BoxCollider2D>().enabled = true;
             GetComponent<SpriteRenderer>().enabled = true;
