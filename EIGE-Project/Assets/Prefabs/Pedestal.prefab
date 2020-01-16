@@ -120,3 +120,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 034259dc7159d5c4b82ce1a5b1bfc922, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasOrb: 1
+  heightOffset: 0.18
