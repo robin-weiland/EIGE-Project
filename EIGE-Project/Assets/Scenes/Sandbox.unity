@@ -2382,6 +2382,11 @@ PrefabInstance:
       propertyPath: currentPedestal
       value: 
       objectReference: {fileID: 1375588898}
+    - target: {fileID: 4924631002428303741, guid: 87ead30e6609b504882dfb86d6dbf2ff,
+        type: 3}
+      propertyPath: type
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4924631002428303742, guid: 87ead30e6609b504882dfb86d6dbf2ff,
         type: 3}
       propertyPath: m_Name

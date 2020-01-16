@@ -7,10 +7,12 @@ public class PlayerMove : PlayerCommand
     private bool facingLeft = true;
     public override void run(PlayerManager player)
     {
-        player.rigidbody2D.velocity = new Vector2(player.properties.movementSpeed * Input.GetAxis("Horizontal"), player.rigidbody2D.velocity.y);
+        //player.rigidbody2D.velocity = new Vector2(player.properties.movementSpeed * Input.GetAxis("Horizontal"), player.rigidbody2D.velocity.y);
+        float speed = player.properties.movementSpeed * Input.GetAxis("Horizontal");
 
+        player.transform.Translate(player.transform.right * speed);
         //Animations
-        player.GetComponent<Animator>().SetFloat("Speed", Mathf.Abs(player.rigidbody2D.velocity.x)*10);
+        player.GetComponent<Animator>().SetFloat("Speed", Mathf.Abs(speed)*10);
         if (Input.GetAxis("Horizontal") > 0 && facingLeft == false){
             facingLeft = true;
             player.GetComponent<SpriteRenderer>().flipX = false;

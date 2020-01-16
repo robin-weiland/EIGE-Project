@@ -1744,7 +1744,7 @@ PrefabInstance:
     - target: {fileID: 1053855353150033216, guid: 7ef485d819ce1a24b8a8ac7d80dd0ead,
         type: 3}
       propertyPath: type
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1053855353150033218, guid: 7ef485d819ce1a24b8a8ac7d80dd0ead,
         type: 3}
@@ -2953,6 +2953,11 @@ PrefabInstance:
       propertyPath: properties.spawnPoint
       value: 
       objectReference: {fileID: 216565889}
+    - target: {fileID: 1624261398070442957, guid: abcaea7d06ac8da4e8dfa1758ca78d27,
+        type: 3}
+      propertyPath: properties.movementSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1624261398348758292, guid: abcaea7d06ac8da4e8dfa1758ca78d27,
         type: 3}
       propertyPath: m_IsActive

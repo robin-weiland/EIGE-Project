@@ -19,7 +19,6 @@ public class OrbMechanic
 
     public virtual void holdingUpdate(PlayerManager player)
     {
-
     }
 
     public virtual void onDrop(PlayerManager player)
@@ -34,6 +33,8 @@ public class OrbMechanic
                 return new TestMechanic();
             case OrbType.Light:
                 return new LightMechanic();
+            case OrbType.Gravity:
+                return new GravityMechanic();
             default:
                 return new OrbMechanic();
         }
