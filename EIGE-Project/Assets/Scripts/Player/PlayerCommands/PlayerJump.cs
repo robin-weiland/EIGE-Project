@@ -13,7 +13,7 @@ public class PlayerJump : PlayerDualCommand
         grounded = Physics2D.OverlapCircle(player.properties.feetPosition.position, player.properties.isGroundedCircleRadius, player.properties.isGround);
 
         if (Input.GetButtonDown("Jump") && grounded) {
-            player.rigidbody2D.velocity = Vector2.up * player.properties.jumpVelocity;
+            player.rigidbody2D.velocity = player.transform.up * player.properties.jumpVelocity;
         }
     }
 
@@ -21,11 +21,11 @@ public class PlayerJump : PlayerDualCommand
     {
         if (player.rigidbody2D.velocity.y < 0)
         {
-            player.rigidbody2D.velocity += Vector2.up * Physics2D.gravity.y * player.properties.jumpDownMultiplier * Time.deltaTime;
+            player.rigidbody2D.velocity += ((Vector2)player.transform.up) * Physics2D.gravity.y * player.properties.jumpDownMultiplier * Time.deltaTime;
         }
         else if (player.rigidbody2D.velocity.y > 0 && !Input.GetButton("Jump"))
         {
-            player.rigidbody2D.velocity += Vector2.up * Physics2D.gravity.y * player.properties.jumpUpMultiplier * Time.deltaTime;
+            player.rigidbody2D.velocity += ((Vector2)player.transform.up) * Physics2D.gravity.y * player.properties.jumpUpMultiplier * Time.deltaTime;
         }
     }
 }
