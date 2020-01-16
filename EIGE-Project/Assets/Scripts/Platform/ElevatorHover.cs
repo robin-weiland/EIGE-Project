@@ -12,17 +12,21 @@ public class ElevatorHover : MonoBehaviour
     public float HoverSpeed;
     private float yposition;
     private bool Elevator;
+    private float time;
+    private bool active;
     void Start()
     {
         yposition = this.transform.position.y;
         this.transform.position = new Vector2(this.transform.position.x, yposition + HoverStrength);
+        active = false;
     }
 
     void Update()
     {
+
         if (Elevator)
         {
-            this.transform.position = new Vector2(this.transform.position.x, yposition + (Mathf.Cos(Time.time * HoverSpeed) * HoverStrength));
+            this.transform.position = new Vector2(this.transform.position.x, yposition + (Mathf.Cos((Time.time - time) * HoverSpeed) * HoverStrength));
         }
     }
 
@@ -31,6 +35,11 @@ public class ElevatorHover : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Elevator = true;
+            if (!active)
+            {
+                active = true;
+                time = Time.time;
+            }
         }
     }
 }

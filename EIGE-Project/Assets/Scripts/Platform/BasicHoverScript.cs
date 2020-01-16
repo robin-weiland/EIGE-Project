@@ -14,6 +14,6 @@ public class BasicHoverScript: MonoBehaviour
 
     void Update()
     {
-        this.transform.position = new Vector2(this.transform.position.x, yposition + (Mathf.Cos(Time.time * HoverSpeed) * HoverStrength));
+        this.transform.position = new Vector2(this.transform.position.x, yposition + (Mathf.Sin(Time.time * HoverSpeed) * HoverStrength));
     }
 }
