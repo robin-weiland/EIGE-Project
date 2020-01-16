@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-    movementSpeed: 5
+    movementSpeed: 0.1
     feetPosition: {fileID: 1624261399028567071}
     isGroundedCircleRadius: 0.1
     isGround:
