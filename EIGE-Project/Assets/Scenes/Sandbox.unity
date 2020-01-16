@@ -2294,6 +2294,11 @@ PrefabInstance:
       propertyPath: hasOrb
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6469560782433681912, guid: 347d379b12d1f2c4784eeebafd90cec9,
+        type: 3}
+      propertyPath: heightOffset
+      value: 0.18
+      objectReference: {fileID: 0}
     - target: {fileID: 7815084488024710819, guid: 347d379b12d1f2c4784eeebafd90cec9,
         type: 3}
       propertyPath: m_Name
@@ -2385,7 +2390,7 @@ PrefabInstance:
     - target: {fileID: 4924631002428303741, guid: 87ead30e6609b504882dfb86d6dbf2ff,
         type: 3}
       propertyPath: type
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4924631002428303742, guid: 87ead30e6609b504882dfb86d6dbf2ff,
         type: 3}

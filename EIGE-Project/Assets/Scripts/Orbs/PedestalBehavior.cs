@@ -7,6 +7,8 @@ public class PedestalBehavior : MonoBehaviour
     PlayerManager currentPlayer;
     [SerializeField]
     public bool hasOrb = true;
+    [SerializeField]
+    public float heightOffset = 0.2f;
 
     // Start is called before the first frame update
     void Start()
@@ -18,14 +20,9 @@ public class PedestalBehavior : MonoBehaviour
     void Update()
     {
         // Pickup
-        if (Input.GetKeyDown("e") && currentPlayer != null && currentPlayer.properties.currentOrb != null && !hasOrb)
+        if (Input.GetKeyDown(KeyCode.E) && currentPlayer != null && currentPlayer.properties.currentOrb != null && !hasOrb)
         {
-            BoxCollider2D orbCollider = currentPlayer.properties.currentOrb.GetComponent<BoxCollider2D>();
-            BoxCollider2D currentCollider = GetComponent<BoxCollider2D>();
-            currentPlayer.properties.currentOrb.drop(new Vector3(
-                transform.position.x, 
-                transform.position.y + currentCollider.size.y * transform.localScale.y / 2 + orbCollider.size.y * currentPlayer.properties.currentOrb.transform.localScale.y / 2, 
-                transform.position.z), this);
+            currentPlayer.properties.currentOrb.drop(this);
         }
     }
 

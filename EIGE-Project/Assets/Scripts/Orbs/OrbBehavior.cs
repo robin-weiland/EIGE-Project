@@ -33,17 +33,20 @@ public class OrbBehavior : MonoBehaviour
     {
         if (current > 0) current--;
         if (!pickedUp) {
-            if (Input.GetKeyDown("e") && playerInRange && current == 0 && currentPlayer.properties.currentOrb == null)
+            if (Input.GetKeyDown(KeyCode.E) && playerInRange && current == 0 && currentPlayer.properties.currentOrb == null)
             {
+                // Drop
                 Camera.Shake(0.4f, 0.25f);
                 currentPlayer.properties.currentOrb = this;
+                // Disable orb
                 GetComponent<BoxCollider2D>().enabled = false;
                 GetComponent<SpriteRenderer>().enabled = false;
+                foreach (Transform child in transform)
+                    child.gameObject.SetActive(false);
+                // Event
                 mechanic.onPickup(currentPlayer);
                 current = cooldown;
                 pickedUp = true;
-                foreach (Transform child in transform)
-                    child.gameObject.SetActive(false);
                 if (currentPedestal != null)
                 {
                     currentPedestal.hasOrb = false;
@@ -53,12 +56,11 @@ public class OrbBehavior : MonoBehaviour
         }
     }
 
-    public void drop(Vector3 position, PedestalBehavior pedestal)
+    public void drop(PedestalBehavior pedestal)
     {
         if (pickedUp && current == 0)
         {
             Camera.Shake(0.4f, 0.25f);
-            transform.position = position;
             mechanic.onDrop(currentPlayer);
             currentPlayer.properties.currentOrb = null;
             GetComponent<BoxCollider2D>().enabled = true;
@@ -68,6 +70,9 @@ public class OrbBehavior : MonoBehaviour
             foreach (Transform child in transform)
                 child.gameObject.SetActive(true);
             currentPedestal = pedestal;
+            this.transform.SetParent(currentPedestal.transform);
+
+            transform.localPosition = transform.up * pedestal.heightOffset;
             pedestal.hasOrb = true;
         }
     }
