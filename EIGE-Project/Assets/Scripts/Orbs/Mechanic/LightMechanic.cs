@@ -2,7 +2,6 @@
 
 public class LightMechanic : OrbMechanic
 {
-    private GameObject light;
     private int child_index = 1;  // probably has to stay one
     public override void onDrop(PlayerManager player)
     {
