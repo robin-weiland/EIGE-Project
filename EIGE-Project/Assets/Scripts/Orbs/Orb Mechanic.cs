@@ -33,8 +33,12 @@ public class OrbMechanic
                 return new TestMechanic();
             case OrbType.Light:
                 return new LightMechanic();
-            case OrbType.Gravity:
-                return new GravityMechanic();
+            case OrbType.GravityRight:
+                return new GravityMechanic(1);
+            case OrbType.GravityUp:
+                return new GravityMechanic(2);
+            case OrbType.GravityLeft:
+                return new GravityMechanic(3);
             default:
                 return new OrbMechanic();
         }
