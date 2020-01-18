@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class OrbMechanic
 {
+
     public OrbMechanic()
     {
     }
@@ -39,6 +40,8 @@ public class OrbMechanic
                 return new GravityMechanic(2);
             case OrbType.GravityLeft:
                 return new GravityMechanic(3);
+            case OrbType.Dash:
+                return new DashMechanic(512);
             default:
                 return new OrbMechanic();
         }

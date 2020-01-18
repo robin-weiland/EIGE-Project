@@ -4,5 +4,5 @@ using UnityEngine;
 
 public enum OrbType
 {
-    NoEffect, Test, Light, GravityRight, GravityUp, GravityLeft
+    NoEffect, Test, Light, GravityRight, GravityUp, GravityLeft, Dash, Pull
 }
