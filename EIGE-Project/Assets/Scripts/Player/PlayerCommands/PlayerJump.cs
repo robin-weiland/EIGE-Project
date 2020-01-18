@@ -12,13 +12,18 @@ public class PlayerJump : PlayerDualCommand
     {
         grounded = Physics2D.OverlapCircle(player.properties.feetPosition.position, player.properties.isGroundedCircleRadius, player.properties.isGround);
 
+        //if (isJumping && grounded && jumpTimeCounter <= 0) isJumping = false;
         if (Input.GetButtonDown("Jump") && grounded) {
             player.rigidbody2D.velocity = player.transform.up * player.properties.jumpVelocity;
+            isJumping = true;
+            jumpTimeCounter = 50;
         }
+        //if (jumpTimeCounter > 0) jumpTimeCounter--;
     }
 
     public override void fixedRun(PlayerManager player)
     {
+        //if (!isJumping) return;
         Vector2 speedVector = player.rigidbody2D.velocity * (Vector2)player.transform.up;
         float speed = speedVector.x + speedVector.y;
         if (speed < 0)
