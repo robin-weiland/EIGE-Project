@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f9fe3493f1f9f143ad861cd4cd2ec74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 3
+  type: 4
   currentPedestal: {fileID: 0}
   cooldown: 5
 --- !u!95 &6385496473702410152
