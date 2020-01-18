@@ -4,6 +4,11 @@ public class DistanceMeasurement : MonoBehaviour
 {
     public GameObject other;
 
+    public DistanceMeasurement(GameObject other)
+    {
+        this.other = other;
+    }
+    
     public float Get()
     {
         return Vector2.Distance(transform.position, other.transform.position);
