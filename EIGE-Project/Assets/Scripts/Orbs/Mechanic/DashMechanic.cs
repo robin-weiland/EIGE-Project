@@ -7,7 +7,7 @@ public class DashMechanic : OrbMechanic
 
     private ContactFilter2D contactFilter;
     private readonly Collider2D[] collider = new Collider2D[1];
-    private int current = 0, cooldown = 50;
+    private int current = 0, cooldown = 20;
     private float dashSpeed = 13f;
     private bool disabled = false;
     private int dis = 0, disTime = 50;
