@@ -1054,7 +1054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042221108}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.29, y: -3.05, z: 0}
+  m_LocalPosition: {x: -2.11, y: -1.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2658,7 +2658,7 @@ PrefabInstance:
     - target: {fileID: 1624261398070442958, guid: abcaea7d06ac8da4e8dfa1758ca78d27,
         type: 3}
       propertyPath: m_LinearDrag
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8785756417448322400, guid: abcaea7d06ac8da4e8dfa1758ca78d27,
         type: 3}
