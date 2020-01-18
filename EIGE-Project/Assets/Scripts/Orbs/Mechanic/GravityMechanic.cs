@@ -14,7 +14,6 @@ public class GravityMechanic : OrbMechanic
         if (type == 2) rotation = 180;
         if (type == 3) rotation = -90;
         direction = new Vector2(-(type - 2) * 9.8f, type == 2 ? 9.8f : 0f);
-        Debug.Log(direction);
     }
 
     public override void onPickup(PlayerManager player)
