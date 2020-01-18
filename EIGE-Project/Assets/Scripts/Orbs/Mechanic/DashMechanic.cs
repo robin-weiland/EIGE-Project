@@ -40,7 +40,7 @@ public class DashMechanic : OrbMechanic
             current = cooldown;
         }
         if (current > 0) current--;
-        if (dis < 0 && disabled)
+        if ((dis < 0 || Physics2D.OverlapCircle(player.properties.feetPosition.position, player.properties.isGroundedCircleRadius, player.properties.isGround)) && disabled)
         {
             foreach (PlayerCommand disable in interfering) disable.enabled = true;
             player.rigidbody2D.drag = previousDrag;
