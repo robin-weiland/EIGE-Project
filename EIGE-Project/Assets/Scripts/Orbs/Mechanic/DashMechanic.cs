@@ -34,7 +34,7 @@ public class DashMechanic : OrbMechanic
 
     public override void holdingUpdate(PlayerManager player)
     {
-        if (current <= 0 && Input.GetKeyDown(KeyCode.E))
+        if (current <= 0 && (Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.LeftShift)))
         {
             player.GetComponent<BoxCollider2D>().OverlapCollider(contactFilter, collider);
             current = cooldown;
