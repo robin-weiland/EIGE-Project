@@ -8,7 +8,7 @@ public class DashMechanic : OrbMechanic
     private ContactFilter2D contactFilter;
     private readonly Collider2D[] collider = new Collider2D[1];
     private int current = 0, cooldown = 50;
-    private float dashSpeed = 10f;
+    private float dashSpeed = 13f;
     private bool disabled = false;
     private int dis = 0, disTime = 50;
 
@@ -53,7 +53,10 @@ public class DashMechanic : OrbMechanic
         if (collider[0] != null)
         {
             foreach (PlayerCommand disable in interfering) disable.enabled = false;
-            Vector2 force = new Vector2(dashSpeed, dashSpeed);
+
+            Vector2 direction = Input.mousePosition;
+            direction = Camera.main.ScreenToWorldPoint(direction);
+            Vector2 force = (direction - (Vector2)player.transform.position).normalized * dashSpeed;
             player.rigidbody2D.velocity = force;
             //player.rigidbody2D.AddForce(force);
             Rigidbody2D other = collider[0].GetComponent<Rigidbody2D>();
