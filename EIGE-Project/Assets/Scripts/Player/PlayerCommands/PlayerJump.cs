@@ -19,13 +19,15 @@ public class PlayerJump : PlayerDualCommand
 
     public override void fixedRun(PlayerManager player)
     {
-        if (player.rigidbody2D.velocity.y < 0)
+        Vector2 speedVector = player.rigidbody2D.velocity * (Vector2)player.transform.up;
+        float speed = speedVector.x + speedVector.y;
+        if (speed < 0)
         {
-            player.rigidbody2D.velocity += ((Vector2)player.transform.up) * Physics2D.gravity.y * player.properties.jumpDownMultiplier * Time.deltaTime;
+            player.rigidbody2D.velocity += ((Vector2)player.transform.up) * -Mathf.Abs(Physics2D.gravity.y + Physics2D.gravity.x) * player.properties.jumpDownMultiplier * Time.deltaTime;
         }
-        else if (player.rigidbody2D.velocity.y > 0 && !Input.GetButton("Jump"))
+        else if (speed > 0 && !Input.GetButton("Jump"))
         {
-            player.rigidbody2D.velocity += ((Vector2)player.transform.up) * Physics2D.gravity.y * player.properties.jumpUpMultiplier * Time.deltaTime;
+            player.rigidbody2D.velocity += ((Vector2)player.transform.up) * -Mathf.Abs(Physics2D.gravity.y + Physics2D.gravity.x) * player.properties.jumpUpMultiplier * Time.deltaTime;
         }
     }
 }
