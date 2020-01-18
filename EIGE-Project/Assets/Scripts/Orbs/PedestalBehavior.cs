@@ -29,7 +29,6 @@ public class PedestalBehavior : MonoBehaviour
 
     public virtual void onOrbAdd(OrbBehavior orb)
     {
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
