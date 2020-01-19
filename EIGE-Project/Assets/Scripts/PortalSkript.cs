@@ -5,11 +5,10 @@ using UnityEngine;
 public class PortalSkript : MonoBehaviour
 {
     public GameObject Pedestal;
-    private string name;
     void Update()
     {
         if (Pedestal.GetComponent<PedestalBehavior>().hasOrb == true) {
-            name = Pedestal.transform.GetChild(0).gameObject.name;
+            name = Pedestal.transform.GetChild(1).gameObject.name;
             if (name == "CloudOrb") {
                 this.GetComponent<Animator>().SetBool("PortalBlue", true);
             }
