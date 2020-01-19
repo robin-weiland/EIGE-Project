@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class OrbMechanic
 {
-    [SerializeField]
-    private GameObject dashArrow;
 
     public OrbMechanic()
     {
@@ -44,6 +42,8 @@ public class OrbMechanic
                 return new GravityMechanic(3);
             case OrbType.Dash:
                 return new DashMechanic(origin.dashAnchor, origin.dashArrow);
+            case OrbType.Projectile:
+                return new ProjectileMechanic(origin.projectile);
             default:
                 return new OrbMechanic();
         }
