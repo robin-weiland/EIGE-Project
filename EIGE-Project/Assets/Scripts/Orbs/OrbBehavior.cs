@@ -23,6 +23,8 @@ public class OrbBehavior : MonoBehaviour
     public GameObject dashArrow;
     [SerializeField]
     public LayerMask dashAnchor;
+    [SerializeField]
+    public GameObject projectile;
 
     // Start is called before the first frame update
     void Start()
