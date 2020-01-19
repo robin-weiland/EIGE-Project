@@ -12,6 +12,7 @@ public class DashMechanic : OrbMechanic
     private bool disabled = false;
     private int dis = 0, disTime = 50;
     private bool slowdown = false;
+    private float oldPlayerSpeed = 0;
     private GameObject arrowPrefab;
     private GameObject currentArrow;
 
@@ -38,24 +39,38 @@ public class DashMechanic : OrbMechanic
 
     public override void holdingUpdate(PlayerManager player)
     {
-        if (current <= 0 && (Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.LeftShift)))
+        if (Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.LeftShift))
         {
             int count = player.GetComponent<BoxCollider2D>().OverlapCollider(contactFilter, collider);
             if (count > 0)
             {
-                slowdown = true;
-                if (currentArrow == null) currentArrow = Object.Instantiate(arrowPrefab);
-                player.rigidbody2D.velocity /= 2;
-                Time.timeScale = 0.5f;
-                current = 10;
+                if (!slowdown && current <= 0)
+                {
+                    foreach (PlayerCommand disable in interfering) disable.enabled = false;
+                    slowdown = true;
+                    if (currentArrow == null) currentArrow = Object.Instantiate(arrowPrefab);
+
+                    player.rigidbody2D.velocity /= 2;
+                    Time.timeScale = 0.4f;
+                    current = 10;
+                }
+                else current = 10;
             }
         }
         if (slowdown)
         {
+            player.rigidbody2D.velocity *= 0.9f;
+            if (currentArrow != null)
+            {
+                Color c = Color.white;
+                c.a = Mathf.Min(current / 7f, 0.5f);
+                currentArrow.GetComponent<SpriteRenderer>().color = c;
+            }
             if (current > 0)
             {
                 if (!(Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.LeftShift)))
                 {
+                    foreach (PlayerCommand disable in interfering) disable.enabled = true;
                     slowdown = false;
                     Time.timeScale = 1f;
                     current = cooldown;
@@ -64,6 +79,7 @@ public class DashMechanic : OrbMechanic
                 }
             } else
             {
+                foreach (PlayerCommand disable in interfering) disable.enabled = true;
                 Time.timeScale = 1f;
                 slowdown = false;
                 collider[0] = null;
@@ -98,7 +114,6 @@ public class DashMechanic : OrbMechanic
             direction = Camera.main.ScreenToWorldPoint(direction);
             Vector2 force = (direction - (Vector2)player.transform.position).normalized * dashSpeed;
             player.rigidbody2D.velocity = force;
-            //player.rigidbody2D.AddForce(force);
             Rigidbody2D other = collider[0].GetComponent<Rigidbody2D>();
             if (other != null) other.velocity = -force;
             collider[0] = null;
