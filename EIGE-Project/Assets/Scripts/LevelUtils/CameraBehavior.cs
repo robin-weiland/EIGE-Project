@@ -38,11 +38,11 @@ public class CameraBehavior : MonoBehaviour
         //CameraFollow X
         if (!CameraStop)
         {
-            this.transform.position = new Vector3(player.transform.position.x, this.transform.position.y, -2);
+            this.transform.position = new Vector3(player.transform.position.x, this.transform.position.y, -10);
         }
 
         //CameraFollow Y is always active
-        this.transform.position = new Vector3(this.transform.position.x, player.transform.position.y + 2, -2);
+        this.transform.position = new Vector3(this.transform.position.x, player.transform.position.y + 2, -10);
 
 
         //Shake
