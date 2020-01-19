@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class CameraBehavior : MonoBehaviour
 {
     //Follow
     public GameObject player;
@@ -11,7 +11,7 @@ public class Camera : MonoBehaviour
     public float maxX;
 
     //Shake
-    private static Camera _instance;
+    private static CameraBehavior _instance;
     private Vector3 _originalPos;
     private float _timeAtCurrentFrame;
     private float _timeAtLastFrame;
