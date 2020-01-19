@@ -36,7 +36,7 @@ public class OrbBehavior : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E) && playerInRange && current == 0 && currentPlayer.properties.currentOrb == null)
             {
                 // Drop
-                Camera.Shake(0.4f, 0.25f);
+                CameraBehavior.Shake(0.4f, 0.25f);
                 currentPlayer.properties.currentOrb = this;
                 // Disable orb
                 GetComponent<BoxCollider2D>().enabled = false;
@@ -60,7 +60,7 @@ public class OrbBehavior : MonoBehaviour
     {
         if (pickedUp && current == 0)
         {
-            Camera.Shake(0.4f, 0.25f);
+            CameraBehavior.Shake(0.4f, 0.25f);
             mechanic.onDrop(currentPlayer);
             pedestal.onOrbAdd(this);
             currentPlayer.properties.currentOrb = null;
