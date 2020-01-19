@@ -39,12 +39,12 @@ public class DashMechanic : OrbMechanic
 
     public override void holdingUpdate(PlayerManager player)
     {
-        if (current <= 0 && (Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.LeftShift)))
+        if (Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.LeftShift))
         {
             int count = player.GetComponent<BoxCollider2D>().OverlapCollider(contactFilter, collider);
             if (count > 0)
             {
-                if (!slowdown)
+                if (!slowdown && current <= 0)
                 {
                     foreach (PlayerCommand disable in interfering) disable.enabled = false;
                     slowdown = true;
@@ -60,6 +60,12 @@ public class DashMechanic : OrbMechanic
         if (slowdown)
         {
             player.rigidbody2D.velocity *= 0.9f;
+            if (currentArrow != null)
+            {
+                Color c = Color.white;
+                c.a = Mathf.Min(current / 7f, 0.5f);
+                currentArrow.GetComponent<SpriteRenderer>().color = c;
+            }
             if (current > 0)
             {
                 if (!(Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.LeftShift)))
