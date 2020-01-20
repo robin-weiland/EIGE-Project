@@ -39,7 +39,7 @@ public class DashMechanic : OrbMechanic
 
     public override void holdingUpdate(PlayerManager player)
     {
-        if (Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetMouseButton(0) || Input.GetKey(KeyCode.LeftShift))
         {
             int count = player.GetComponent<BoxCollider2D>().OverlapCollider(contactFilter, collider);
             if (count > 0)
@@ -68,7 +68,7 @@ public class DashMechanic : OrbMechanic
             }
             if (current > 0)
             {
-                if (!(Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.LeftShift)))
+                if (!(Input.GetMouseButton(0) || Input.GetKey(KeyCode.LeftShift)))
                 {
                     foreach (PlayerCommand disable in interfering) disable.enabled = true;
                     slowdown = false;

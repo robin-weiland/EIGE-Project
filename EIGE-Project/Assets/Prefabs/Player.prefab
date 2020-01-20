@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1624261398070442957}
   - component: {fileID: 1624261398070442956}
   - component: {fileID: 1624261398070442947}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1624261398348758293}
   - component: {fileID: 1624261398348758294}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1624261399028567071}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FeetPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
