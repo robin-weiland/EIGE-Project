@@ -15,8 +15,6 @@ public class DeathZone : MonoBehaviour
     {
         if (player.tag == "Player")
         {
-            Debug.Log("Dead");
-            //Destroy(player.gameObject);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
