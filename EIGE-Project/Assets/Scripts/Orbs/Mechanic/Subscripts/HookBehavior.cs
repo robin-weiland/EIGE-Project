@@ -5,27 +5,48 @@ using UnityEngine;
 public class HookBehavior : MonoBehaviour
 {
     public PlayerManager origin;
-    public float speed = 0.5f;
+    public float speed = 0.1f;
     public GameObject hit;
     public Vector2 collisionPos;
     private DistanceJoint2D joint;
+    [SerializeField]
     private float pullSpeed = 0.05f;
-    private float minDistance = 1f;
+    [SerializeField]
+    private float maxDistance = 10f;
+    public float offSet = 0f;
+    private float minDistance = 0.5f;
+    private float currentDistance = 0;
+    private LineRenderer line;
+    private Material mat;
 
     void Start()
     {
-        
+        line = GetComponent<LineRenderer>();
+        List<Material> result = new List<Material>();
+        line.GetMaterials(result);
+        mat = result[0];
+        currentDistance = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (line != null)
+        {
+            line.SetPosition(0, origin.transform.position);
+            line.SetPosition(1, transform.position);
+            mat.SetTextureOffset("_MainTex", new Vector2(offSet, 0));
+        }
     }
 
     private void FixedUpdate()
     {
-        if (joint == null) transform.position += transform.up * speed;
+        if (joint == null)
+        {
+            transform.position += transform.up * speed;
+            currentDistance += speed;
+            if (currentDistance > maxDistance) Destroy(gameObject);
+        } 
         else joint.distance = Mathf.Max(joint.distance - pullSpeed, minDistance);
     }
 
