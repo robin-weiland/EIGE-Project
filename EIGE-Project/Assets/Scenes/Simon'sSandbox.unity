@@ -501,6 +501,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background Gradient
       objectReference: {fileID: 0}
+    - target: {fileID: 6706146846385867394, guid: d0a23bb489715e04fa7d3d835b45cc7b,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1170968177
+      objectReference: {fileID: 0}
+    - target: {fileID: 6706146846385867394, guid: d0a23bb489715e04fa7d3d835b45cc7b,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6706146846385867395, guid: d0a23bb489715e04fa7d3d835b45cc7b,
         type: 3}
       propertyPath: m_LocalPosition.x
