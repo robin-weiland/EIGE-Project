@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PortalSkript : MonoBehaviour
 {
+    private Scenemanager scenemanager;
     public GameObject Pedestal;
     void Update()
     {
@@ -27,5 +28,13 @@ public class PortalSkript : MonoBehaviour
                 this.GetComponent<Animator>().SetBool(parameter.name, false);
             }
         }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "LightOrb")
+        {
+            scenemanager.switchSceneToLevel(3);
+        }
+        //Do the same Thing for each level added; watch BuildManager for scene-info
     }
 }
