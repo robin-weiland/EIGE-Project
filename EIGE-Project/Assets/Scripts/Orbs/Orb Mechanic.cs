@@ -44,6 +44,8 @@ public class OrbMechanic
                 return new DashMechanic(origin.dashAnchor, origin.dashArrow);
             case OrbType.Projectile:
                 return new ProjectileMechanic(origin.projectile);
+            case OrbType.Pull:
+                return new PullMechanic(origin.hook);
             default:
                 return new OrbMechanic();
         }
