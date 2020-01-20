@@ -31,6 +31,10 @@ public class PedestalBehavior : MonoBehaviour
     {
     }
 
+    public virtual void onOrbRemove(OrbBehavior orb)
+    {
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")

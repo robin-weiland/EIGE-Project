@@ -5,6 +5,7 @@ using UnityEngine;
 public class OrbBehavior : MonoBehaviour
 {
     public OrbMechanic mechanic;
+
     [SerializeField]
     public OrbType type = OrbType.NoEffect;
     private bool pickedUp = false;
@@ -17,10 +18,20 @@ public class OrbBehavior : MonoBehaviour
     [SerializeField]
     private int cooldown = 5;
 
+    [Header("Mechanic References")]
+    [SerializeField]
+    public GameObject dashArrow;
+    [SerializeField]
+    public LayerMask dashAnchor;
+    [SerializeField]
+    public GameObject projectile;
+    [SerializeField]
+    public GameObject hook;
+
     // Start is called before the first frame update
     void Start()
     {
-        mechanic = OrbMechanic.GetOrbMechanic(type);
+        mechanic = OrbMechanic.GetOrbMechanic(type, this);
     }
 
     private void Update()
@@ -49,6 +60,7 @@ public class OrbBehavior : MonoBehaviour
                 pickedUp = true;
                 if (currentPedestal != null)
                 {
+                    currentPedestal.onOrbRemove(this);
                     currentPedestal.hasOrb = false;
                     currentPedestal = null;
                 }
