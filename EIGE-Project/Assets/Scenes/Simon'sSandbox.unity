@@ -629,7 +629,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1000
+  m_Mass: 1
   m_LinearDrag: 1
   m_AngularDrag: 0.1
   m_GravityScale: 1
@@ -1344,7 +1344,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226216808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.948, y: 0, z: 0.1}
+  m_LocalPosition: {x: -8.84, y: 0, z: -3.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1555,7 +1555,7 @@ PrefabInstance:
     - target: {fileID: 1053855353150033216, guid: 7ef485d819ce1a24b8a8ac7d80dd0ead,
         type: 3}
       propertyPath: type
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1053855353150033216, guid: 7ef485d819ce1a24b8a8ac7d80dd0ead,
         type: 3}
@@ -1578,6 +1578,12 @@ PrefabInstance:
       propertyPath: projectile
       value: 
       objectReference: {fileID: 1226216808}
+    - target: {fileID: 1053855353150033216, guid: 7ef485d819ce1a24b8a8ac7d80dd0ead,
+        type: 3}
+      propertyPath: hook
+      value: 
+      objectReference: {fileID: 4932145325574783077, guid: 7ecdc423c5182d74ab4e2d5ea810fede,
+        type: 3}
     - target: {fileID: 1053855353150033218, guid: 7ef485d819ce1a24b8a8ac7d80dd0ead,
         type: 3}
       propertyPath: m_Name
@@ -2098,6 +2104,12 @@ PrefabInstance:
       propertyPath: dashArrow
       value: 
       objectReference: {fileID: 921904065364177757, guid: 97d4c1aa2c7226445a97c1943026ecb4,
+        type: 3}
+    - target: {fileID: 1053855353150033216, guid: 7ef485d819ce1a24b8a8ac7d80dd0ead,
+        type: 3}
+      propertyPath: hook
+      value: 
+      objectReference: {fileID: 4932145325574783077, guid: 7ecdc423c5182d74ab4e2d5ea810fede,
         type: 3}
     - target: {fileID: 1053855353150033218, guid: 7ef485d819ce1a24b8a8ac7d80dd0ead,
         type: 3}
