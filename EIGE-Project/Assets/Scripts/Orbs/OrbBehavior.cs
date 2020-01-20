@@ -60,6 +60,7 @@ public class OrbBehavior : MonoBehaviour
                 pickedUp = true;
                 if (currentPedestal != null)
                 {
+                    currentPedestal.onOrbRemove(this);
                     currentPedestal.hasOrb = false;
                     currentPedestal = null;
                 }
