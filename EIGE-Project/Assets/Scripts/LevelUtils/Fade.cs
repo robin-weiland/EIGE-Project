@@ -6,26 +6,22 @@ using UnityEngine.UI;
 public class Fade : MonoBehaviour
 {
     [Header("SceneFade")]
-    [SerializeField] 
-    public Image fader;
-    
-    [SerializeField] [Range(1f, 10f)]
+    [SerializeField] [Range(0f, 10f)]
     public float fadeInLength;
     
-    [SerializeField] [Range(1f, 10f)]
+    [SerializeField] [Range(0f, 10f)]
     public float fadeOutLength;
     
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(this.GetType());
-        fader.canvasRenderer.SetAlpha(1f);
-        fader.CrossFadeAlpha(0f, fadeInLength, false);
+        gameObject.GetComponent<Image>().canvasRenderer.SetAlpha(1f);
+        gameObject.GetComponent<Image>().CrossFadeAlpha(0f, fadeInLength, false);
     }
 
     private void OnDestroy()
     {
-        fader.CrossFadeAlpha(1f, fadeOutLength, false);
-        fader.canvasRenderer.SetAlpha(1f);
+        gameObject.GetComponent<Image>().CrossFadeAlpha(1f, fadeOutLength, false);
+        gameObject.GetComponent<Image>().canvasRenderer.SetAlpha(1f);
     }
 }
