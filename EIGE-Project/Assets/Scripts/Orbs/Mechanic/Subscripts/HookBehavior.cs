@@ -41,9 +41,15 @@ public class HookBehavior : MonoBehaviour
     {
         if (line != null)
         {
-            Vector2 pos = getStartingPos();
-            line.SetPosition(0, pos);
-            line.SetPosition(1, transform.position);
+            if (joint != null && joint.connectedBody != null)
+            {
+                line.SetPosition(0, getStartingPos(joint.connectedBody.transform.position));
+                line.SetPosition(1, joint.connectedBody.transform.position);
+            } else
+            {
+                line.SetPosition(0, getStartingPos(transform.position));
+                line.SetPosition(1, transform.position);
+            }
             mat.SetTextureOffset("_MainTex", new Vector2(offSet, 0));
         }
     }
@@ -62,7 +68,7 @@ public class HookBehavior : MonoBehaviour
             if (joint.connectedBody == null)
             {
                 joint.connectedAnchor = transform.position;
-            }
+            } 
         }
     }
 
@@ -111,9 +117,9 @@ public class HookBehavior : MonoBehaviour
         }
     }
 
-    private Vector2 getStartingPos()
+    private Vector2 getStartingPos(Vector2 currentPos)
     {
-        Vector2 direction = transform.position - origin.transform.position;
+        Vector2 direction = currentPos - (Vector2)origin.transform.position;
         direction = direction.normalized;
         direction.x *= minX;
         direction.y *= minY;

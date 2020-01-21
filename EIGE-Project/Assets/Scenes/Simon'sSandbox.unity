@@ -669,9 +669,9 @@ DistanceJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 8.409088, y: 4.297155}
+  m_ConnectedAnchor: {x: 5.033041, y: 4.297155}
   m_AutoConfigureDistance: 0
-  m_Distance: 6.92789
+  m_Distance: 6.1
   m_MaxDistanceOnly: 1
 --- !u!1001 &700092274
 PrefabInstance:
@@ -2172,12 +2172,12 @@ PrefabInstance:
     - target: {fileID: 8211704048826069939, guid: 88cb7c7bbe9660a42bef2422791564dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.51
+      value: 5.04
       objectReference: {fileID: 0}
     - target: {fileID: 8211704048826069939, guid: 88cb7c7bbe9660a42bef2422791564dc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.63
+      value: -1.66
       objectReference: {fileID: 0}
     - target: {fileID: 8211704048826069939, guid: 88cb7c7bbe9660a42bef2422791564dc,
         type: 3}
