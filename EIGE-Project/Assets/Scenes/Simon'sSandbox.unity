@@ -2271,6 +2271,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4932145325574783077, guid: 7ecdc423c5182d74ab4e2d5ea810fede,
         type: 3}
+    - target: {fileID: 1053855353150033216, guid: 7ef485d819ce1a24b8a8ac7d80dd0ead,
+        type: 3}
+      propertyPath: dashField
+      value: 
+      objectReference: {fileID: 557763026665636502, guid: ad1a009223e68bb4ea8434d635bd7fa2,
+        type: 3}
     - target: {fileID: 1053855353150033218, guid: 7ef485d819ce1a24b8a8ac7d80dd0ead,
         type: 3}
       propertyPath: m_Name
