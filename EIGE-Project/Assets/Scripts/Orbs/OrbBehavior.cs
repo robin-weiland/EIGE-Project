@@ -24,6 +24,8 @@ public class OrbBehavior : MonoBehaviour
     [SerializeField]
     public LayerMask dashAnchor;
     [SerializeField]
+    public GameObject dashField;
+    [SerializeField]
     public GameObject projectile;
     [SerializeField]
     public GameObject hook;

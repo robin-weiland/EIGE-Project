@@ -53,7 +53,12 @@ MonoBehaviour:
   collisionPos: {x: 0, y: 0}
   pullSpeed: 0.05
   maxDistance: 12
+  forceField: {fileID: 6405058971716846725, guid: b3ba3209b01272e499ee01b64f55c421,
+    type: 3}
   offSet: 0
+  minDistance: 1
+  minX: 0.6
+  minY: 0.8
 --- !u!50 &4932145325574783075
 Rigidbody2D:
   serializedVersion: 4
@@ -127,7 +132,7 @@ LineRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 51778157
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: -1}
