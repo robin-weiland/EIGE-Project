@@ -15,12 +15,14 @@ public class DashMechanic : OrbMechanic
     private float oldPlayerSpeed = 0;
     private GameObject arrowPrefab;
     private GameObject currentArrow;
+    private GameObject dashField;
+    private GameObject currentField;
 
     private float previousDrag;
 
     private List<PlayerCommand> interfering = new List<PlayerCommand>();
     
-    public DashMechanic(LayerMask layer, GameObject arrow)
+    public DashMechanic(LayerMask layer, GameObject arrow, GameObject dashField)
     {
         contactFilter = new ContactFilter2D
         {
@@ -28,6 +30,7 @@ public class DashMechanic : OrbMechanic
             useLayerMask = true,
             useTriggers = true
         };
+        this.dashField = dashField;
         this.arrowPrefab = arrow;
     }
 
@@ -49,7 +52,11 @@ public class DashMechanic : OrbMechanic
                     foreach (PlayerCommand disable in interfering) disable.enabled = false;
                     slowdown = true;
                     if (currentArrow == null) currentArrow = Object.Instantiate(arrowPrefab);
-
+                    if (currentField == null)
+                    {
+                        currentField = Object.Instantiate(dashField, player.transform.position, Quaternion.identity);
+                        currentField.transform.parent = player.transform;
+                    }
                     player.rigidbody2D.velocity /= 2;
                     Time.timeScale = 0.4f;
                     current = 10;
@@ -84,6 +91,7 @@ public class DashMechanic : OrbMechanic
                 slowdown = false;
                 collider[0] = null;
                 if (currentArrow != null) Object.Destroy(currentArrow);
+                //if (currentField != null) Object.Destroy(currentField);
                 currentArrow = null;
             }
         }
@@ -102,6 +110,7 @@ public class DashMechanic : OrbMechanic
             currentArrow.transform.position = (Vector2)player.transform.position + direction;
             currentArrow.transform.localEulerAngles = new Vector3(0, 0, -Mathf.Atan2(direction.x / 2, direction.y / 2) * Mathf.Rad2Deg);
         }
+        if (currentField != null && !(slowdown || disabled || collider[0] != null)) Object.Destroy(currentField);
     }
 
     public override void holdingFixedUpdate(PlayerManager player)

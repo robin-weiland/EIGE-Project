@@ -41,7 +41,7 @@ public class OrbMechanic
             case OrbType.GravityLeft:
                 return new GravityMechanic(3);
             case OrbType.Dash:
-                return new DashMechanic(origin.dashAnchor, origin.dashArrow);
+                return new DashMechanic(origin.dashAnchor, origin.dashArrow, origin.dashField);
             case OrbType.Projectile:
                 return new ProjectileMechanic(origin.projectile);
             case OrbType.Pull:
