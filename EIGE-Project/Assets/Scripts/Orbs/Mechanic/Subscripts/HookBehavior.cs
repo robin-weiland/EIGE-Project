@@ -28,7 +28,6 @@ public class HookBehavior : MonoBehaviour
         currentDistance = 0;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (line != null)
@@ -46,8 +45,15 @@ public class HookBehavior : MonoBehaviour
             transform.position += transform.up * speed;
             currentDistance += speed;
             if (currentDistance > maxDistance) Destroy(gameObject);
-        } 
-        else joint.distance = Mathf.Max(joint.distance - pullSpeed, minDistance);
+        }
+        else
+        {
+            joint.distance = Mathf.Max(joint.distance - pullSpeed, minDistance);
+            if (joint.connectedBody == null)
+            {
+                joint.connectedAnchor = transform.position;
+            }
+        }
     }
 
     private void OnDestroy()
@@ -88,6 +94,7 @@ public class HookBehavior : MonoBehaviour
                 joint.connectedAnchor = collisionPos;
                 joint.distance = Vector2.Distance(origin.transform.position, collisionPos);
                 joint.connectedBody = null;
+                transform.parent = collision.gameObject.transform;
             }
             joint.autoConfigureDistance = false;
         }
