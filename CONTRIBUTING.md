@@ -27,6 +27,8 @@ Generally we try to lean towards the [c# conventions](https://docs.microsoft.com
  
 ### Misc
  - **Measure Distances** by attaching DistanceMeasurement to an object and set its paramenters or call DistanceMeasurement.Get(gameobject, gameobject); to get distances on the fly
+ 
+- **Fade in and out of scenes** by bringing the SceneFade prefab into your scene and setting the time values in the inspector (you might wanna disable the in-editor-view in the hierarchy panel since the prefab will block your view :D)
 
 
 ## Sprites
