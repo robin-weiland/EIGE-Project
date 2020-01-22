@@ -17,6 +17,7 @@ public class PlayerManager : MonoBehaviour
 
         registerCommand(new PlayerMove());
         registerCommand(new PlayerSingleJump());
+        registerCommand(new PlayerDoubleJump());
         Spawn();
     }
 
