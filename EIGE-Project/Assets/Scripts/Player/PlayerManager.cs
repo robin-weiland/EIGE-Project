@@ -16,7 +16,7 @@ public class PlayerManager : MonoBehaviour
         rigidbody2D.freezeRotation = true;
 
         registerCommand(new PlayerMove());
-        registerCommand(new PlayerMultiJump(3));
+        registerCommand(new PlayerMultiJump(1));
         Spawn();
     }
 
@@ -54,7 +54,7 @@ public class PlayerManager : MonoBehaviour
         dualCommands.Add(command);
     }
 
-    public PlayerCommand getCommand<T>()
+    public PlayerCommand getCommand<T  >()
     {
         foreach (PlayerCommand command in commands)
         {
