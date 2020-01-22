@@ -1,4 +1,6 @@
 ﻿
+using UnityEngine;
+
 public abstract class PlayerCommand
 {
     public bool enabled = true;
