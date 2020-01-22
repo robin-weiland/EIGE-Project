@@ -4,6 +4,7 @@ public class PortalSkript : MonoBehaviour
 {
     private Scenemanager scenemanager;
     public GameObject Pedestal;
+    public Level target;
     void Update()
     {
         if (Pedestal.GetComponent<PedestalBehavior>().hasOrb == true) {
@@ -31,7 +32,7 @@ public class PortalSkript : MonoBehaviour
     {
         if(other.tag == "LightOrb")
         {
-            scenemanager.switchSceneToLevel(3);
+            scenemanager.switchSceneToLevel(target);
         }
         //Do the same Thing for each level added; watch BuildManager for scene-info
     }

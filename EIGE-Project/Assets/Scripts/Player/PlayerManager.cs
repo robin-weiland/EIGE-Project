@@ -16,8 +16,7 @@ public class PlayerManager : MonoBehaviour
         rigidbody2D.freezeRotation = true;
 
         registerCommand(new PlayerMove());
-        registerCommand(new PlayerSingleJump());
-        registerCommand(new PlayerDoubleJump());
+        registerCommand(new PlayerMultiJump(1));
         Spawn();
     }
 
