@@ -12,7 +12,6 @@ public class Timer : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        Debug.Log("Time: " + time);
         displayTimer(time);
     }
     public void displayTimer(float time)
