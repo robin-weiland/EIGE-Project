@@ -3,13 +3,11 @@ public class DoubleJumpMechanic : OrbMechanic
 {
     public override void onPickup(PlayerManager player)
     {
-        player.GetComponent<PlayerManager>().getCommand<PlayerSingleJump>().enabled = false;
-        player.GetComponent<PlayerManager>().getCommand<PlayerDoubleJump>().enabled = true;
+        player.GetComponent<PlayerManager>().GetComponent<PlayerMultiJump>().AllowedJumps = 2;
     }
 
     public override void onDrop(PlayerManager player)
     {
-        player.GetComponent<PlayerManager>().getCommand<PlayerDoubleJump>().enabled = false;
-        player.GetComponent<PlayerManager>().getCommand<PlayerSingleJump>().enabled = true;
+        player.GetComponent<PlayerManager>().GetComponent<PlayerMultiJump>().AllowedJumps = 1;
     }
 }
