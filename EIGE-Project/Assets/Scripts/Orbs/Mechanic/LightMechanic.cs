@@ -1,5 +1,4 @@
-﻿using UnityEngine;
-
+﻿
 public class LightMechanic : OrbMechanic
 {
     private int child_index = 1;  // probably has to stay one

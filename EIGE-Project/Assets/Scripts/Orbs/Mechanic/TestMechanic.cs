@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿
 public class TestMechanic : OrbMechanic
 {
     // Don't forget to add a enum to OrbType and your mechanic in the switch of orb mechanic

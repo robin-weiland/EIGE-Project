@@ -28,7 +28,6 @@ public class BasicEnemy : MonoBehaviour
         switch (gotoPatrol)
         {
             case 1:
-                
                 break;
             case 2:
                 break;
