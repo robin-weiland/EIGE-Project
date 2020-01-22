@@ -43,6 +43,8 @@ public class OrbMechanic
                 return new ProjectileMechanic(origin.projectile);
             case OrbType.Pull:
                 return new PullMechanic(origin.hook);
+            case OrbType.DoubleJump:
+                return new DoubleJumpMechanic();
             default:
                 return new OrbMechanic();
         }
