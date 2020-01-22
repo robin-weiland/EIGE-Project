@@ -8,12 +8,12 @@ public class TestMechanic : OrbMechanic
     public override void onDrop(PlayerManager player)
     {
         // Just an excample
-        player.getCommand<PlayerJump>().enabled = true;
+        player.getCommand<PlayerSingleJump>().enabled = true;
     }
 
     public override void onPickup(PlayerManager player)
     {
-        player.getCommand<PlayerJump>().enabled = false;
+        player.getCommand<PlayerSingleJump>().enabled = false;
     }
 
     public override void holdingUpdate(PlayerManager player)
