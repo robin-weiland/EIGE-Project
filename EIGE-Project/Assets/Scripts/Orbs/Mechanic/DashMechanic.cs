@@ -36,7 +36,7 @@ public class DashMechanic : OrbMechanic
     public override void onPickup(PlayerManager player)
     {
         interfering.Add(player.getCommand<PlayerMove>());
-        interfering.Add(player.getCommand<PlayerSingleJump>());
+        interfering.Add(player.getCommand<PlayerMultiJump>());
     }
 
     public override void holdingUpdate(PlayerManager player)
