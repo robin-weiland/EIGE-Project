@@ -5,7 +5,7 @@ public class PlayerMultiJump : PlayerDualCommand
     private bool _grounded;
     private int _jumpCounter;  // current jump determined by keystroke
     // property so it can be overriden
-    public int AllowedJumps { get; protected set; }  // continuous jumps allowed by the script
+    public int AllowedJumps { get; set; }  // continuous jumps allowed by the script
 
     public PlayerMultiJump(int allowedJumps)
     {
