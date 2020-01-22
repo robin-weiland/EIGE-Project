@@ -1179,7 +1179,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 1591087401}
-  m_PlaneDistance: 0
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -2453,6 +2453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pedestal: {fileID: 638830736}
+  target: 1
 --- !u!1001 &1678064849
 PrefabInstance:
   m_ObjectHideFlags: 0
