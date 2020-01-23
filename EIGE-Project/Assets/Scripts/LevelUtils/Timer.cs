@@ -16,9 +16,14 @@ public class Timer : MonoBehaviour
     }
     public void displayTimer(float time)
     {
-        string minutes = ((int)time / 50).ToString();
-        string seconds = (time % 60).ToString();
+        string minutes = ((int)time / 60).ToString();
+        string seconds = (time % 60).ToString("f2");
 
+        if(float.Parse(seconds) < 10f)
+        {
+            string temp = "0";
+            seconds = string.Concat(temp, seconds);
+        }
         text.text = minutes + ":" + seconds;
     }
 }
