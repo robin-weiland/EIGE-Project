@@ -11,8 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intro.unity
     guid: 709ce2e88816f654284b063806ecc7a2
+<<<<<<< HEAD
   - enabled: 0
     path: Assets/Scenes/TestLevel.unity
+=======
+  - enabled: 1
+    path: Assets/Scenes/Old First Level.unity
+>>>>>>> 1876a2e40f826606ba98517018cc082282804a87
     guid: 07c972f41dab09f42b11acb40f754dfe
   - enabled: 1
     path: Assets/Scenes/Level1DoubleJump.unity
