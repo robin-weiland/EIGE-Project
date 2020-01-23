@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public enum Level
 {
     Intro,
-    Level_1,
+    Level1DoubleJump,
     // TODO add levels here and below
 }
 
@@ -24,7 +24,7 @@ public class Scenemanager : MonoBehaviour
     {
         switch (lvl)
         {
-            case Level.Level_1: return "Scenes/Level_1";
+            case Level.Level1DoubleJump: return "Scenes/Level1DoubleJump";
             case Level.Intro: return "Scenes/Intro";
             // TODO add levels here and above
             default: throw new Exception("Couldn't resolve level!");
