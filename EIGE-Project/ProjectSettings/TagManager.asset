@@ -8,6 +8,7 @@ TagManager:
   - Orb
   - Portal
   - Field
+  - Blade
   layers:
   - Default
   - TransparentFX

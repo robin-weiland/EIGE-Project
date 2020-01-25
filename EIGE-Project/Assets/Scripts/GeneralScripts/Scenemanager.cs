@@ -19,12 +19,7 @@ public enum Level
 public class Scenemanager : MonoBehaviour
 {
     public Level previous, next;
-    public GameObject loadingScreen;
-    public Slider slider;
-    public void Update()
-    {
-        loadingScreen.SetActive(false);
-    }
+    
     public string GetLevel(Level lvl)
     {
         switch (lvl)
@@ -39,6 +34,11 @@ public class Scenemanager : MonoBehaviour
             default: throw new Exception("Couldn't resolve level!");
 
         }
+    }
+
+    public void reloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
     public Scene returnCurrentScene()
@@ -56,14 +56,7 @@ public class Scenemanager : MonoBehaviour
     IEnumerator switchSceneToLevelAsync(int level)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(level);
-        loadingScreen.SetActive(true);
-        while (!operation.isDone)
-        {
-            float progress = Mathf.Clamp01(operation.progress / 9f);
-            slider.value = progress;
-            yield return null;
-        }
-
+        yield return null;
     }
     public void switchSceneToLevel(Level level)   //do level -1
     {
@@ -72,13 +65,7 @@ public class Scenemanager : MonoBehaviour
     IEnumerator switchSceneToLevelAsync(Level level)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(GetLevel(level));
-        loadingScreen.SetActive(true);
-        while (!operation.isDone)
-        {
-            float progress = Mathf.Clamp01(operation.progress / 9f);
-            slider.value = progress;
-            yield return null;
-        }
+        yield return null;
     }
     public void quitGame()
     {
