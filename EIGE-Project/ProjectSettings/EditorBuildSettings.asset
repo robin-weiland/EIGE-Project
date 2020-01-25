@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 32e08f4189b257a4f90d08aeb5302e42
   - enabled: 1
-    path: Assets/Scenes/Intro.unity
-    guid: 709ce2e88816f654284b063806ecc7a2
+    path: Assets/Scenes/ShowCase.unity
+    guid: c34cc8656b586714c8ea5ce6f0500a56
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 07c972f41dab09f42b11acb40f754dfe
+  - enabled: 1
+    path: Assets/Scenes/DashLevel.unity
+    guid: a39ecd97b26a2004395722a2041968ab
+  - enabled: 1
+    path: Assets/Scenes/DoubleJumpLevel.unity
+    guid: ec94a42606f81a44a9c6c34d14cb9d9f
   m_configObjects: {}
