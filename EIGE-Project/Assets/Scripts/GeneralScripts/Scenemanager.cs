@@ -12,6 +12,7 @@ public enum Level
     DoubleJumpLevel,
     ShowCase,
     MainMenu,
+    Level1DoubleJump,
     // TODO add levels here and below
 }
 
@@ -28,7 +29,7 @@ public class Scenemanager : MonoBehaviour
     {
         switch (lvl)
         {
-            case Level.Level_1: return "Scenes/Level_1";
+            case Level.Level1DoubleJump: return "Scenes/Level1DoubleJump";
             case Level.Intro: return "Scenes/Intro";
             case Level.DashLevel: return "Scenes/DashLevel";
             case Level.DoubleJumpLevel: return "Scenes/DoubleJumpLevel";
