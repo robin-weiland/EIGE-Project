@@ -19,7 +19,7 @@ public class PedestalPortalBehavior : PedestalBehavior
     {
         switch (type)
         {
-            case OrbType.NoEffect:
+            case OrbType.DoubleJump:
                 portal.GetComponent<Animator>().SetBool("PortalBlue", state);
                 break;
             case OrbType.Light:
