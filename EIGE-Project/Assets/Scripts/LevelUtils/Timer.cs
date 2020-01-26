@@ -7,12 +7,18 @@ public class Timer : MonoBehaviour
 {
     private float time = 0;
     public Text text;
+    public GameObject player;
+    public bool finished = false;
 
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
-        displayTimer(time);
+        if (!finished)
+        {
+            time += Time.deltaTime;
+            displayTimer(time);
+        }
+        
     }
     public void displayTimer(float time)
     {
@@ -25,5 +31,10 @@ public class Timer : MonoBehaviour
             seconds = string.Concat(temp, seconds);
         }
         text.text = minutes + ":" + seconds;
+    }
+    public float stop()
+    {
+        finished = true;
+        return time;
     }
 }

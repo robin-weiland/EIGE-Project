@@ -10,8 +10,9 @@ public class PlayerMainMenu : MonoBehaviour
 
     void Start()
     {
-        // OrbBehavior orb = new OrbBehavior();
+
         currentOrb.type = OrbType.Light;
         player.transform.GetChild(child_index).gameObject.SetActive(true);
     }
+
 }
