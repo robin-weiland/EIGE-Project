@@ -4,10 +4,13 @@ public class PedestalPortalBehavior : PedestalBehavior
 {
     [SerializeField]
     private GameObject portal;
+    [SerializeField]
+    private Timer timer;
 
     public override void onOrbAdd(OrbBehavior orb)
     {
         changeState(orb.type, true);
+        timer.stop();
     }
 
     public override void onOrbRemove(OrbBehavior orb)

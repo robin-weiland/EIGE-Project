@@ -51,22 +51,14 @@ public class Scenemanager : MonoBehaviour
     }
     public void switchSceneToLevel(int level)   //do level -1
     {
-        StartCoroutine(switchSceneToLevelAsync(level));
+        SceneManager.LoadScene(level);
     }
-    IEnumerator switchSceneToLevelAsync(int level)
-    {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(level);
-        yield return null;
-    }
+
     public void switchSceneToLevel(Level level)   //do level -1
     {
-        StartCoroutine(switchSceneToLevelAsync(level));
+        SceneManager.LoadScene(GetLevel(level));
     }
-    IEnumerator switchSceneToLevelAsync(Level level)
-    {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(GetLevel(level));
-        yield return null;
-    }
+
     public void quitGame()
     {
         //Application.Quit();
