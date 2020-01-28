@@ -44,7 +44,7 @@ public class OrbBehavior : MonoBehaviour
     {
         if (current > 0) current--;
         if (!pickedUp) {
-            if (Input.GetKeyDown(KeyCode.E) && playerInRange && current == 0 && currentPlayer.properties.currentOrb == null)
+            if (Input.GetButtonDown("Interact") && playerInRange && current == 0 && currentPlayer.properties.currentOrb == null)
             {
                 // Drop
                 CameraBehavior.Shake(0.4f, 0.25f);

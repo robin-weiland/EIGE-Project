@@ -18,7 +18,7 @@ public class PedestalBehavior : MonoBehaviour
     void Update()
     {
         // Pickup
-        if (Input.GetKeyDown(KeyCode.E) && currentPlayer != null && currentPlayer.properties.currentOrb != null && !hasOrb)
+        if (Input.GetButtonDown("Interact") && currentPlayer != null && currentPlayer.properties.currentOrb != null && !hasOrb)
         {
             currentPlayer.properties.currentOrb.drop(this);
         }
