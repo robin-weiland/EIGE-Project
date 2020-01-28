@@ -41,7 +41,7 @@ public class DashMechanic : OrbMechanic
 
     public override void holdingUpdate(PlayerManager player)
     {
-        if (Input.GetMouseButton(0) || Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetButton("Action"))
         {
             int count = player.GetComponent<BoxCollider2D>().OverlapCollider(contactFilter, collider);
             if (count > 0)
@@ -74,7 +74,7 @@ public class DashMechanic : OrbMechanic
             }
             if (current > 0)
             {
-                if (!(Input.GetMouseButton(0) || Input.GetKey(KeyCode.LeftShift)))
+                if (!Input.GetButton("Action"))
                 {
                     foreach (PlayerCommand disable in interfering) disable.enabled = true;
                     slowdown = false;
@@ -103,9 +103,7 @@ public class DashMechanic : OrbMechanic
         if (current > 0) current--;
         if (currentArrow != null)
         {
-            Vector2 direction = Input.mousePosition;
-            direction = Camera.main.ScreenToWorldPoint(direction);
-            direction = (direction - (Vector2)player.transform.position).normalized;
+            Vector2 direction = player.getDirection();
             currentArrow.transform.position = (Vector2)player.transform.position + direction;
             currentArrow.transform.localEulerAngles = new Vector3(0, 0, -Mathf.Atan2(direction.x / 2, direction.y / 2) * Mathf.Rad2Deg);
         }
@@ -118,9 +116,7 @@ public class DashMechanic : OrbMechanic
         {
             foreach (PlayerCommand disable in interfering) disable.enabled = false;
 
-            Vector2 direction = Input.mousePosition;
-            direction = Camera.main.ScreenToWorldPoint(direction);
-            Vector2 force = (direction - (Vector2)player.transform.position).normalized * dashSpeed;
+            Vector2 force = player.getDirection() * dashSpeed;
             player.rigidbody2D.velocity = force;
             Rigidbody2D other = collider[0].GetComponent<Rigidbody2D>();
             if (other != null) other.velocity = -force;

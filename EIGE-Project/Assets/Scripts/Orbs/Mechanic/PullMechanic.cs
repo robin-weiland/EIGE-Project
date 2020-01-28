@@ -14,16 +14,14 @@ public class PullMechanic : OrbMechanic
 
     public override void holdingUpdate(PlayerManager player)
     {
-        if (current == null && (Input.GetMouseButton(0) || Input.GetKey(KeyCode.LeftShift)) && cur <= 0)
+        if (current == null && Input.GetButton("Action") && cur <= 0)
         {
-            Vector2 direction = Input.mousePosition;
-            direction = Camera.main.ScreenToWorldPoint(direction);
-            direction = (direction - (Vector2)player.transform.position).normalized;
+            Vector2 direction = player.getDirection();
             current = Object.Instantiate(hook, player.transform.position, Quaternion.Euler(0, 0, -Mathf.Atan2(direction.x / 2, direction.y / 2) * Mathf.Rad2Deg));
             current.GetComponent<HookBehavior>().origin = player;
             cur = cooldown;
         }
-        if (current != null && !(Input.GetMouseButton(0) || Input.GetKey(KeyCode.LeftShift)))
+        if (current != null && !Input.GetButton("Action"))
         {
             Object.Destroy(current);
             current = null;

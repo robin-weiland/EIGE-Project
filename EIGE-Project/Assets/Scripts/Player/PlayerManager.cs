@@ -71,4 +71,18 @@ public class PlayerManager : MonoBehaviour
     {
         transform.position = properties.spawnPoint.position;
     }
+
+    public Vector2 getDirection()
+    {
+        if (Input.GetAxis("SecondX") != 0 || Input.GetAxis("SecondY") != 0)
+        {
+            return new Vector2(Input.GetAxis("SecondX"), Input.GetAxis("SecondY")).normalized;
+        } else
+        {
+            Vector2 direction = Input.mousePosition;
+            direction = Camera.main.ScreenToWorldPoint(direction);
+            direction = (direction - (Vector2)transform.position).normalized;
+            return direction;
+        }
+    }
 }
