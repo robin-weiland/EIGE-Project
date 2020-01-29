@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
     private float time = 0;
     public Text text;
     public GameObject player;
-    public bool finished = false;
+    private bool finished = false;
 
     // Update is called once per frame
     void Update()

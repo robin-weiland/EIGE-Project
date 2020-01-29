@@ -14,6 +14,7 @@ public class DeathZone : MonoBehaviour
         if (player.tag == "Player")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //try other version using own scenemanager
         }
     }
 }
