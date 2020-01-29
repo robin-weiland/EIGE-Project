@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7476943366247252934}
   - component: {fileID: 7476943366247252929}
   - component: {fileID: 7476943366247252935}
-  - component: {fileID: 7476943366247252932}
   m_Layer: 0
   m_Name: Portal Opening_0
   m_TagString: Untagged
@@ -116,16 +115,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HoverStrength: 0.1
   HoverSpeed: 1
---- !u!114 &7476943366247252932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7476943366247252931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ace03fcb327675146bb7425f010e1674, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pedestal: {fileID: 0}
