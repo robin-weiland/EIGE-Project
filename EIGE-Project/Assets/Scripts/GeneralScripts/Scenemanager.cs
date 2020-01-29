@@ -13,6 +13,7 @@ public enum Level
     ShowCase,
     MainMenu,
     Level1DoubleJump,
+    GravityLevel,
     // TODO add levels here and below
 }
 
@@ -30,6 +31,7 @@ public class Scenemanager : MonoBehaviour
             case Level.DoubleJumpLevel: return "Scenes/DoubleJumpLevel";
             case Level.ShowCase: return "Scenes/ShowCase";
             case Level.MainMenu: return "Scenes/MainMenu";
+            case Level.GravityLevel: return "Scenes/GravityLevel";
             // TODO add levels here and above
             default: throw new Exception("Couldn't resolve level!");
 
