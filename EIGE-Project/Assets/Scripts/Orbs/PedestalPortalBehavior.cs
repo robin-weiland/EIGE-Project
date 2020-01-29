@@ -10,7 +10,7 @@ public class PedestalPortalBehavior : PedestalBehavior
     public override void onOrbAdd(OrbBehavior orb)
     {
         changeState(orb.type, true);
-        timer.stop();
+        if (timer != null) timer.stop();
     }
 
     public override void onOrbRemove(OrbBehavior orb)

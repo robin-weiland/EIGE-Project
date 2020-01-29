@@ -23,7 +23,7 @@ public class GravityMechanic : OrbMechanic
 
     public override void holdingUpdate(PlayerManager player)
     {
-        if (current <= 0 && Input.GetButton("Fire1"))
+        if (current <= 0 && Input.GetButton("Action"))
         {
             if (enabled) disable(player);
             else enable(player);

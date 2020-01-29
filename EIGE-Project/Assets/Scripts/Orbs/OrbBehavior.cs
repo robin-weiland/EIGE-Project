@@ -85,7 +85,7 @@ public class OrbBehavior : MonoBehaviour
             currentPedestal = pedestal;
             this.transform.SetParent(currentPedestal.transform);
 
-            transform.localPosition = transform.up * pedestal.heightOffset;
+            transform.position = pedestal.transform.position + pedestal.transform.up * pedestal.heightOffset;
             pedestal.hasOrb = true;
         }
     }
