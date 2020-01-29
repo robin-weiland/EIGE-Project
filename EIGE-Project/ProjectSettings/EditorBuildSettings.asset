@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1DoubleJump.unity
     guid: ec94a42606f81a44a9c6c34d14cb9d9f
+  - enabled: 1
+    path: Assets/Scenes/DashLevel.unity
+    guid: a39ecd97b26a2004395722a2041968ab
+  - enabled: 1
+    path: Assets/Scenes/ShowCase.unity
+    guid: c34cc8656b586714c8ea5ce6f0500a56
   m_configObjects: {}
