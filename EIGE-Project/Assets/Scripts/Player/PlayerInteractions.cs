@@ -9,7 +9,7 @@ public class PlayerInteractions : MonoBehaviour
         switch (other.tag)
         {
             case "Blade":
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                scenemanager.reloadScene();
                 break;
         }
     }

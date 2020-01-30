@@ -506,6 +506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028e00bd6afa495385a2639def2b2b57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scenemanager: {fileID: 1829786036}
 --- !u!1001 &216585595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1083,7 +1084,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &372225657
 GameObject:
@@ -2799,7 +2800,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1159949301
 GameObject:
@@ -2906,7 +2907,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1183236640
 PrefabInstance:
@@ -3673,7 +3674,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1462698464
 PrefabInstance:
@@ -4192,6 +4193,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 209851290}
+    - target: {fileID: 3977296679781725626, guid: 2ff437e8e6c642f449bb15be4e7023ae,
+        type: 3}
+      propertyPath: scenemanager
+      value: 
+      objectReference: {fileID: 1829786036}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ff437e8e6c642f449bb15be4e7023ae, type: 3}
 --- !u!1 &1573592011
@@ -4666,7 +4672,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1737104957
 GameObject:
@@ -5045,8 +5051,20 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1829786036 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3098075452907540877, guid: 2aa298bc74b36c1478bb9e85624de102,
+    type: 3}
+  m_PrefabInstance: {fileID: 1943114221}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2af8e90e3751d24bbc59a331f5a860f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1943114221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5268,7 +5286,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2084215629
 PrefabInstance:
