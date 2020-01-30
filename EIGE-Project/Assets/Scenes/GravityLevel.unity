@@ -638,7 +638,7 @@ PrefabInstance:
     - target: {fileID: 6706146846385867395, guid: d0a23bb489715e04fa7d3d835b45cc7b,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1500
+      value: 2300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0a23bb489715e04fa7d3d835b45cc7b, type: 3}
@@ -5359,6 +5359,16 @@ PrefabInstance:
       propertyPath: properties.spawnPoint
       value: 
       objectReference: {fileID: 894078386}
+    - target: {fileID: 1624261398348758292, guid: abcaea7d06ac8da4e8dfa1758ca78d27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624261398348758294, guid: abcaea7d06ac8da4e8dfa1758ca78d27,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abcaea7d06ac8da4e8dfa1758ca78d27, type: 3}
 --- !u!1001 &1935710047
