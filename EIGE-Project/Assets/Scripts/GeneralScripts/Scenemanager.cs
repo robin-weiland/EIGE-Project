@@ -83,6 +83,10 @@ public class Scenemanager : MonoBehaviour
         {
             this.switchSceneToLevel(4);
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            this.switchSceneMainMenu();
+        }
     }
     
 }
