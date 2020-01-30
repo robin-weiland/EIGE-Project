@@ -63,11 +63,26 @@ public class Scenemanager : MonoBehaviour
 
     public void quitGame()
     {
-        //Application.Quit();
     #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
     #else
-            Application.Quit();
+            Application.Quit(); //quits in builded version
     #endif
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown("1"))
+        {
+            this.switchSceneToLevel(2);
+        }
+        if (Input.GetKeyDown("2"))
+        {
+            this.switchSceneToLevel(3);
+        }
+        if (Input.GetKeyDown("3"))
+        {
+            this.switchSceneToLevel(4);
+        }
+    }
+    
 }

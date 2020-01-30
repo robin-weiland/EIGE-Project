@@ -3,7 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class DeathZone : MonoBehaviour
 {
-    public GameObject player; 
+    public GameObject player;
+    public Scenemanager scenemanager;
 
     public void Update()
     {
@@ -13,8 +14,7 @@ public class DeathZone : MonoBehaviour
     {
         if (player.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            //try other version using own scenemanager
+            scenemanager.reloadScene();
         }
     }
 }

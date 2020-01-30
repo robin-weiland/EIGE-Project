@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerInteractions : MonoBehaviour
 {
+    public Scenemanager scenemanager;
     private void OnTriggerEnter2D(Collider2D other)
     {
         switch (other.tag)
