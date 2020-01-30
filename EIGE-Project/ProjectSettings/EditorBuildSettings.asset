@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/DashLevel.unity
     guid: a39ecd97b26a2004395722a2041968ab
   - enabled: 1
+    path: Assets/Scenes/GravityLevel.unity
+    guid: c26d0b9b5c0995a4db01b3c5f813533d
+  - enabled: 1
     path: Assets/Scenes/ShowCase.unity
     guid: c34cc8656b586714c8ea5ce6f0500a56
   m_configObjects: {}
