@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerInteractions : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class PlayerInteractions : MonoBehaviour
         switch (other.tag)
         {
             case "Blade":
-                GetComponent < Scenemanager>().reloadScene();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 break;
         }
     }
