@@ -4156,7 +4156,7 @@ PrefabInstance:
     - target: {fileID: 1110671291208604999, guid: 2aa298bc74b36c1478bb9e85624de102,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1110671291208604999, guid: 2aa298bc74b36c1478bb9e85624de102,
         type: 3}
@@ -4470,6 +4470,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020433907888522715, guid: c67cff8444994df45a0d2d17ec2d20ad,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1717009243}
     - target: {fileID: 2020433907888522718, guid: c67cff8444994df45a0d2d17ec2d20ad,
         type: 3}
       propertyPath: m_Name
