@@ -281,6 +281,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88cb7c7bbe9660a42bef2422791564dc, type: 3}
+--- !u!1001 &292145154
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 149132356418477129, guid: 35c40d3e96b4dd847b608a70155fea23,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 149132356418477129, guid: 35c40d3e96b4dd847b608a70155fea23,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149132356418477129, guid: 35c40d3e96b4dd847b608a70155fea23,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149132356418477129, guid: 35c40d3e96b4dd847b608a70155fea23,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149132356418477129, guid: 35c40d3e96b4dd847b608a70155fea23,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149132356418477129, guid: 35c40d3e96b4dd847b608a70155fea23,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149132356418477129, guid: 35c40d3e96b4dd847b608a70155fea23,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 149132356418477129, guid: 35c40d3e96b4dd847b608a70155fea23,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 149132356418477129, guid: 35c40d3e96b4dd847b608a70155fea23,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149132356418477129, guid: 35c40d3e96b4dd847b608a70155fea23,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149132356418477129, guid: 35c40d3e96b4dd847b608a70155fea23,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149132356418477132, guid: 35c40d3e96b4dd847b608a70155fea23,
+        type: 3}
+      propertyPath: m_Name
+      value: MusicPlayer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 35c40d3e96b4dd847b608a70155fea23, type: 3}
 --- !u!1 &320628805 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3372442384859878010, guid: 19389e52037a27747872ff1e5b195b48,
