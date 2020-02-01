@@ -27,6 +27,8 @@ public class OrbBehavior : MonoBehaviour
     public GameObject projectile;
     [SerializeField]
     public GameObject hook;
+    [SerializeField]
+    public ParticleSystem gravityParticles;
 
     // Start is called before the first frame update
     void Start()

@@ -6,14 +6,16 @@ public class GravityMechanic : OrbMechanic
     private Vector2 direction;
     private bool enabled = false;
     private int current, cooldown = 100;
+    private ParticleSystem particles;
 
     // Type of Gravitation: 1: Right 2: Up 3: Left 
-    public GravityMechanic(int type)
+    public GravityMechanic(int type, ParticleSystem particles = null)
     {
         if (type == 1) rotation = 90;
         if (type == 2) rotation = 180;
         if (type == 3) rotation = -90;
         direction = new Vector2(-(type - 2) * 9.8f, type == 2 ? 9.8f : 0f);
+        this.particles = particles;
     }
 
     public override void onPickup(PlayerManager player)
@@ -44,6 +46,7 @@ public class GravityMechanic : OrbMechanic
         player.rigidbody2D.velocity = new Vector2(0, 0);
         Physics2D.gravity = direction;
         enabled = true;
+        if (particles != null) particles.Play();
     }
 
     private void disable(PlayerManager player) {
@@ -52,5 +55,6 @@ public class GravityMechanic : OrbMechanic
         player.rigidbody2D.velocity = new Vector2(0, 0);
         Physics2D.gravity = new Vector2(0, -9.8f);
         enabled = false;
+        if (particles != null) particles.Play();
     }
 }
