@@ -13,56 +13,62 @@ namespace GeneralScripts
         public Sprite hookOrb;
         public Sprite lightOrb;
 
-        private PlayerProperties playerprops;
-        private SpriteRenderer renderer;
-        private GameObject view;
-        private Image image;
+        private PlayerProperties _playerprops;
+        private GameObject _view;
+        private Image _image;
 
 
         private void Start()
         {
-            playerprops = player.GetComponent<PlayerManager>().properties;
-            renderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
-            view = transform.GetChild(0).gameObject;
-            image = view.GetComponent<Image>();
+            _playerprops = player.GetComponent<PlayerManager>().properties;
+            _view = transform.GetChild(0).gameObject;
+            _image = _view.GetComponent<Image>();
         }
 
 
         private void Update()
         {
-            if (playerprops.currentOrb != null)
-                switch (playerprops.currentOrb.type)
+            if (_playerprops.currentOrb != null)
+                switch (_playerprops.currentOrb.type)
                 {
                     // not enabling here to prevent flashing; hate the repeated enabling...
                     case OrbType.DoubleJump:
-                        view.SetActive(true);
-                        image.sprite = cloudOrb;
+                        _view.SetActive(true);
+                        _image.sprite = cloudOrb;
                         break;
             
                     case OrbType.Dash:
-                        view.SetActive(true);
-                        image.sprite = lightOrb;
+                        _view.SetActive(true);
+                        _image.sprite = lightOrb;
                         break;
                     
                     case OrbType.Pull:
-                        view.SetActive(true);
-                        image.sprite = hookOrb;
+                        _view.SetActive(true);
+                        _image.sprite = hookOrb;
                         break;
             
                     // only one gravity view for now
                     case OrbType.GravityUp:
                     case OrbType.GravityRight:
                     case OrbType.GravityLeft:
-                        view.SetActive(true);
-                        image.sprite = gravityOrb;
+                        _view.SetActive(true);
+                        _image.sprite = gravityOrb;
                         break;
             
                     default:
-                        view.SetActive(false);
+                        _view.SetActive(false);
                         break;
                 }
             else
-                view.SetActive(false);
+                _view.SetActive(false);
+        }
+
+        public void SetAlpha(float alpha)
+        {
+            // apparently more efficient that way
+            var color = _image.color;
+            color = new Color(color.r, color.g, color.b, alpha);
+            _image.color = color;
         }
     }
 }
