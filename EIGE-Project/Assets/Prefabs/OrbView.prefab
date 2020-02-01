@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abadbeb293b44342ba2e1d689c98e513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1624261398070442946, guid: abcaea7d06ac8da4e8dfa1758ca78d27, type: 3}
   cloudOrb: {fileID: -1336632584745034151, guid: ad24f13804d92fb419e1c75d5cdbfc54,
     type: 3}
   gravityOrb: {fileID: 6678956916822907347, guid: 003fc3ed21be0d04098c37d0c5817626,
