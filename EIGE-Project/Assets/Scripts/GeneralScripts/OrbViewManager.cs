@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 namespace GeneralScripts
@@ -36,17 +35,17 @@ namespace GeneralScripts
                         _view.SetActive(true);
                         _image.sprite = cloudOrb;
                         break;
-            
+
                     case OrbType.Dash:
                         _view.SetActive(true);
                         _image.sprite = lightOrb;
                         break;
-                    
+
                     case OrbType.Pull:
                         _view.SetActive(true);
                         _image.sprite = hookOrb;
                         break;
-            
+
                     // only one gravity view for now
                     case OrbType.GravityUp:
                     case OrbType.GravityRight:
@@ -54,7 +53,7 @@ namespace GeneralScripts
                         _view.SetActive(true);
                         _image.sprite = gravityOrb;
                         break;
-            
+
                     default:
                         _view.SetActive(false);
                         break;
