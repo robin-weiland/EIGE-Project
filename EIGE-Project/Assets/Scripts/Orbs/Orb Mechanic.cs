@@ -32,11 +32,11 @@ public class OrbMechanic
             case OrbType.Light:
                 return new LightMechanic();
             case OrbType.GravityRight:
-                return new GravityMechanic(1);
+                return new GravityMechanic(1, origin.gravityParticles);
             case OrbType.GravityUp:
-                return new GravityMechanic(2);
+                return new GravityMechanic(2, origin.gravityParticles);
             case OrbType.GravityLeft:
-                return new GravityMechanic(3);
+                return new GravityMechanic(3, origin.gravityParticles);
             case OrbType.Dash:
                 return new DashMechanic(origin.dashAnchor, origin.dashArrow, origin.dashField);
             case OrbType.Projectile:
