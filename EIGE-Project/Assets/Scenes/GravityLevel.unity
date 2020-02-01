@@ -3897,6 +3897,11 @@ PrefabInstance:
       propertyPath: currentPedestal
       value: 
       objectReference: {fileID: 1566064145}
+    - target: {fileID: 6385496473702410155, guid: b91101cf8ad8a504ba3cca6ee6962d75,
+        type: 3}
+      propertyPath: gravityParticles
+      value: 
+      objectReference: {fileID: 1694469808}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b91101cf8ad8a504ba3cca6ee6962d75, type: 3}
 --- !u!1001 &1485330783
