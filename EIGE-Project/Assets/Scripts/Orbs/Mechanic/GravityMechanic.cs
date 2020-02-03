@@ -5,7 +5,7 @@ public class GravityMechanic : OrbMechanic
     private float rotation = 0;
     private Vector2 direction;
     private bool enabled = false;
-    private int current, cooldown = 100;
+    private int current = 0, cooldown = 100;
     private ParticleSystem particles;
 
     // Type of Gravitation: 1: Right 2: Up 3: Left 
@@ -20,7 +20,8 @@ public class GravityMechanic : OrbMechanic
 
     public override void onPickup(PlayerManager player)
     {
-        
+        current = cooldown / 2;
+        updateUI(player);
     }
 
     public override void holdingUpdate(PlayerManager player)
@@ -31,7 +32,11 @@ public class GravityMechanic : OrbMechanic
             else enable(player);
             current = cooldown;
         }
-        if (current > 0) current--;
+        if (current > 0)
+        {
+            current--;
+            updateUI(player);
+        }
     }
 
     public override void onDrop(PlayerManager player)
@@ -47,6 +52,7 @@ public class GravityMechanic : OrbMechanic
         Physics2D.gravity = direction;
         enabled = true;
         if (particles != null) particles.Play();
+        updateUI(player);
     }
 
     private void disable(PlayerManager player) {
@@ -56,5 +62,22 @@ public class GravityMechanic : OrbMechanic
         Physics2D.gravity = new Vector2(0, -9.8f);
         enabled = false;
         if (particles != null) particles.Play();
+        updateUI(player);
+    }
+
+    private void updateUI(PlayerManager player)
+    {
+        if (player.orbUI != null)
+        {
+            if (current > 0)
+            {
+                player.orbUI.setFillStatus((cooldown - current) / (float)cooldown);
+                player.orbUI.setUp(false);
+            } else
+            {
+                player.orbUI.setFull();
+                player.orbUI.setUp(true);
+            }
+        }
     }
 }

@@ -56,6 +56,13 @@ public class OrbBehavior : MonoBehaviour
                 GetComponent<SpriteRenderer>().enabled = false;
                 foreach (Transform child in transform)
                     child.gameObject.SetActive(false);
+                // UI
+                if (currentPlayer.orbUI != null)
+                {
+                    currentPlayer.orbUI.loadMechanic(type);
+                    currentPlayer.orbUI.setActive();
+                    currentPlayer.orbUI.setFillStatus(0);
+                }
                 // Event
                 mechanic.onPickup(currentPlayer);
                 current = cooldown;
@@ -89,6 +96,10 @@ public class OrbBehavior : MonoBehaviour
 
             transform.position = pedestal.transform.position + pedestal.transform.up * pedestal.heightOffset;
             pedestal.hasOrb = true;
+            if (currentPlayer.orbUI != null)
+            {
+                currentPlayer.orbUI.setDisabled();
+            }
         }
     }
 

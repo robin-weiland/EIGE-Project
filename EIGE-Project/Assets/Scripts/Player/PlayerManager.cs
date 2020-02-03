@@ -8,6 +8,8 @@ public class PlayerManager : MonoBehaviour
     private List<PlayerDualCommand> dualCommands = new List<PlayerDualCommand>();
     [SerializeField]
     public PlayerProperties properties = new PlayerProperties();
+    [SerializeField]
+    public UIOrb orbUI;
     public new Rigidbody2D rigidbody2D { private set; get; }
 
     void Start()
