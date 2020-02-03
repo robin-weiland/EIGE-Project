@@ -18,8 +18,9 @@ public class PlayerMultiJump : PlayerDualCommand
         _grounded = Physics2D.OverlapCircle(player.properties.feetPosition.position,
             player.properties.isGroundedCircleRadius, player.properties.isGround);
 
-        if (!Input.GetButtonDown("Jump")) return;
         if (_grounded) _jumpCounter = 0;
+        else if (_jumpCounter == 0) _jumpCounter = 1;
+        if (!Input.GetButtonDown("Jump")) return;
         if (_jumpCounter >= AllowedJumps) return;
         player.rigidbody2D.velocity = player.transform.up * player.properties.jumpVelocity;
         _jumpCounter++;
@@ -37,5 +38,10 @@ public class PlayerMultiJump : PlayerDualCommand
             player.rigidbody2D.velocity += (Vector2)player.transform.up
                                            * (-Mathf.Abs(Physics2D.gravity.y + Physics2D.gravity.x)
                                            * player.properties.jumpUpMultiplier * Time.deltaTime);
+    }
+
+    public int getCurrentJumps()
+    {
+        return _jumpCounter;
     }
 }

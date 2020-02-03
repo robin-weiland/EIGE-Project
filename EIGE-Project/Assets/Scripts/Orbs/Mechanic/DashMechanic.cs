@@ -37,6 +37,7 @@ public class DashMechanic : OrbMechanic
     {
         interfering.Add(player.getCommand<PlayerMove>());
         interfering.Add(player.getCommand<PlayerMultiJump>());
+        updateUI(player);
     }
 
     public override void holdingUpdate(PlayerManager player)
@@ -108,6 +109,7 @@ public class DashMechanic : OrbMechanic
             currentArrow.transform.localEulerAngles = new Vector3(0, 0, -Mathf.Atan2(direction.x / 2, direction.y / 2) * Mathf.Rad2Deg);
         }
         if (currentField != null && !(slowdown || disabled || collider[0] != null)) Object.Destroy(currentField);
+        updateUI(player);
     }
 
     public override void holdingFixedUpdate(PlayerManager player)
@@ -131,5 +133,21 @@ public class DashMechanic : OrbMechanic
     public override void onDrop(PlayerManager player)
     {
         interfering.Clear();
+    }
+
+    private void updateUI(PlayerManager player)
+    {
+        if (player.orbUI != null)
+        {
+            if (collider[0] == null && dis <= 0)
+            {
+                player.orbUI.setUp(false);
+            }
+            else
+            {
+                player.orbUI.setUp(true);
+            }
+            player.orbUI.setFillStatus(dis / (float)disTime);
+        }
     }
 }
