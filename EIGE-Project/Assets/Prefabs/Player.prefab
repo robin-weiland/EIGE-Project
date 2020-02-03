@@ -108,6 +108,7 @@ MonoBehaviour:
     jumpDownMultiplier: 3
     currentOrb: {fileID: 0}
     spawnPoint: {fileID: 0}
+  orbUI: {fileID: 3066571118221866907, guid: 892611fed3bf0fd42a9c6b5fd0fd37b7, type: 3}
 --- !u!212 &1624261398070442956
 SpriteRenderer:
   m_ObjectHideFlags: 0
