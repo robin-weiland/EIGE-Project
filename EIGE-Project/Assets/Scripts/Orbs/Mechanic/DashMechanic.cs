@@ -147,7 +147,10 @@ public class DashMechanic : OrbMechanic
             {
                 player.orbUI.setUp(true);
             }
-            player.orbUI.setFillStatus(dis / (float)disTime);
+            if (collider[0] != null && dis <= 0)
+            {
+                player.orbUI.setFull();
+            } else player.orbUI.setFillStatus(dis / (float)disTime);
         }
     }
 }
