@@ -20,7 +20,7 @@ public class GravityMechanic : OrbMechanic
 
     public override void onPickup(PlayerManager player)
     {
-        current = cooldown / 2;
+        current = 0;
         updateUI(player);
     }
 
