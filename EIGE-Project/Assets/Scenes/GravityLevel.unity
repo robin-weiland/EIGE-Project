@@ -539,7 +539,7 @@ PrefabInstance:
         type: 3}
       propertyPath: clip
       value: 
-      objectReference: {fileID: 8300000, guid: 08b0d649f852972489d4739747dfd626, type: 3}
+      objectReference: {fileID: 8300000, guid: 670d03e4b9e32e447bb102da2ed4d72c, type: 3}
     - target: {fileID: 6385496473702410155, guid: b91101cf8ad8a504ba3cca6ee6962d75,
         type: 3}
       propertyPath: audiosrc
@@ -3150,7 +3150,7 @@ PrefabInstance:
         type: 3}
       propertyPath: clip
       value: 
-      objectReference: {fileID: 8300000, guid: 08b0d649f852972489d4739747dfd626, type: 3}
+      objectReference: {fileID: 8300000, guid: 670d03e4b9e32e447bb102da2ed4d72c, type: 3}
     - target: {fileID: 6385496473702410155, guid: b91101cf8ad8a504ba3cca6ee6962d75,
         type: 3}
       propertyPath: audiosrc
@@ -10823,7 +10823,7 @@ PrefabInstance:
         type: 3}
       propertyPath: clip
       value: 
-      objectReference: {fileID: 8300000, guid: 08b0d649f852972489d4739747dfd626, type: 3}
+      objectReference: {fileID: 8300000, guid: 670d03e4b9e32e447bb102da2ed4d72c, type: 3}
     - target: {fileID: 6385496473702410155, guid: b91101cf8ad8a504ba3cca6ee6962d75,
         type: 3}
       propertyPath: audiosrc
