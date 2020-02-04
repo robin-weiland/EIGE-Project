@@ -923,7 +923,7 @@ PrefabInstance:
         type: 3}
       propertyPath: scenemanager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1784371163}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ff437e8e6c642f449bb15be4e7023ae, type: 3}
 --- !u!1 &268579875

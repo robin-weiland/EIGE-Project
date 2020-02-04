@@ -759,7 +759,7 @@ PrefabInstance:
     - target: {fileID: 185282415547642957, guid: 347d379b12d1f2c4784eeebafd90cec9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 185282415547642957, guid: 347d379b12d1f2c4784eeebafd90cec9,
         type: 3}
@@ -2945,7 +2945,7 @@ PrefabInstance:
     - target: {fileID: 1110671291208604999, guid: 2aa298bc74b36c1478bb9e85624de102,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1110671291208604999, guid: 2aa298bc74b36c1478bb9e85624de102,
         type: 3}
@@ -4043,6 +4043,16 @@ PrefabInstance:
       propertyPath: gravityParticles
       value: 
       objectReference: {fileID: 1694469808}
+    - target: {fileID: 6385496473702410155, guid: b91101cf8ad8a504ba3cca6ee6962d75,
+        type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 08b0d649f852972489d4739747dfd626, type: 3}
+    - target: {fileID: 6385496473702410155, guid: b91101cf8ad8a504ba3cca6ee6962d75,
+        type: 3}
+      propertyPath: audiosrc
+      value: 
+      objectReference: {fileID: 1373979544}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b91101cf8ad8a504ba3cca6ee6962d75, type: 3}
 --- !u!1001 &1485330783
