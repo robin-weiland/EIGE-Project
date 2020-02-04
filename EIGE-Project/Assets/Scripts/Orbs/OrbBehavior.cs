@@ -10,6 +10,8 @@ public class OrbBehavior : MonoBehaviour
     private bool playerInRange = false;
     private PlayerManager currentPlayer;
 
+    public AudioSource audiosrc;
+    public AudioClip clip;
     public PedestalBehavior currentPedestal;
 
     private int current = 20;
@@ -48,6 +50,13 @@ public class OrbBehavior : MonoBehaviour
         if (!pickedUp) {
             if (Input.GetButtonDown("Interact") && playerInRange && current == 0 && currentPlayer.properties.currentOrb == null)
             {
+                //Sound
+                if (!audiosrc.isPlaying)
+                {
+                    Debug.Log(audiosrc.clip + "hi");
+                    audiosrc.clip = clip;
+                    audiosrc.PlayOneShot(clip, 0.8f);
+                }
                 // Drop
                 CameraBehavior.Shake(0.4f, 0.25f);
                 currentPlayer.properties.currentOrb = this;
@@ -81,6 +90,12 @@ public class OrbBehavior : MonoBehaviour
     {
         if (pickedUp && current == 0)
         {
+            if (!audiosrc.isPlaying)
+            {
+                Debug.Log(audiosrc.clip + "hi");
+                audiosrc.clip = clip;
+                audiosrc.PlayOneShot(clip, 1);
+            }
             CameraBehavior.Shake(0.4f, 0.25f);
             mechanic.onDrop(currentPlayer);
             pedestal.onOrbAdd(this);
