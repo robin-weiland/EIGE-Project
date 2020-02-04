@@ -5704,7 +5704,7 @@ PrefabInstance:
         type: 3}
       propertyPath: clip
       value: 
-      objectReference: {fileID: 8300000, guid: 08b0d649f852972489d4739747dfd626, type: 3}
+      objectReference: {fileID: 8300000, guid: 670d03e4b9e32e447bb102da2ed4d72c, type: 3}
     - target: {fileID: 1053855353150033218, guid: 7ef485d819ce1a24b8a8ac7d80dd0ead,
         type: 3}
       propertyPath: m_Name
@@ -5803,6 +5803,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MusicPlayer2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3279467186988662026, guid: e9d823e9945627443badb30c545f2fc3,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 08b0d649f852972489d4739747dfd626, type: 3}
+    - target: {fileID: 3279467186988662026, guid: e9d823e9945627443badb30c545f2fc3,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3279467186988662026, guid: e9d823e9945627443badb30c545f2fc3,
+        type: 3}
+      propertyPath: BypassListenerEffects
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3279467186988662028, guid: e9d823e9945627443badb30c545f2fc3,
         type: 3}
