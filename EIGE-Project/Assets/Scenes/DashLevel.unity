@@ -4947,6 +4947,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PortalPedestal
       objectReference: {fileID: 0}
+    - target: {fileID: 6385663622792605876, guid: 235bbc45d75fb824599010f9b562bac6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 235bbc45d75fb824599010f9b562bac6, type: 3}
 --- !u!4 &1229974146 stripped
@@ -8305,6 +8310,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal Opening_0
       objectReference: {fileID: 0}
+    - target: {fileID: 7476943366247252931, guid: aae7dddff281e434c805ef138722fc14,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7476943366247252934, guid: aae7dddff281e434c805ef138722fc14,
         type: 3}
       propertyPath: m_SortingOrder
@@ -9948,7 +9958,7 @@ GameObject:
   - component: {fileID: 7449101159827813334}
   - component: {fileID: 7449101159827813329}
   - component: {fileID: 7449101159827813333}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: End Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
