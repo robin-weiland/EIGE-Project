@@ -10,7 +10,13 @@ public class PedestalPortalBehavior : PedestalBehavior
     public override void onOrbAdd(OrbBehavior orb)
     {
         changeState(orb.type, true);
-        if (timer != null) timer.stop();
+        if (this.tag.Equals("Last Pedestral")) //TAG IN FINAL LAST LEVEL THAT PEDESTRAL AS LAST ONE TO STOP THE TIMER
+        {
+            if (timer != null)
+            {
+                timer.stop();
+            }
+        }
     }
 
     public override void onOrbRemove(OrbBehavior orb)

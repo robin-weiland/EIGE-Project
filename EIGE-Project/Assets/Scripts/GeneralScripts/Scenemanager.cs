@@ -37,7 +37,7 @@ public class Scenemanager : MonoBehaviour
 
         }
     }
-
+    
     public void reloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -46,6 +46,14 @@ public class Scenemanager : MonoBehaviour
     public Scene returnCurrentScene()
     {
         return SceneManager.GetActiveScene();
+    }
+    public int returnCurrentSceneInt()
+    {
+        return SceneManager.GetActiveScene().buildIndex;
+    }
+    public int returnCurrentSceneCount()
+    {
+        return SceneManager.sceneCount;
     }
     public void switchSceneMainMenu()
     {

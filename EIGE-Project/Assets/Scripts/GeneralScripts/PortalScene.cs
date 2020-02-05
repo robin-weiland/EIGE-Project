@@ -21,13 +21,21 @@ public class PortalScene : MonoBehaviour
 
     }
 
-    public void OnTriggerEnter2D(Collider2D player)
+    public void OnTriggerEnter2D(Collider2D player) //switching to next level after portal opening
     {
         if (pedestal.GetComponent<PedestalBehavior>().hasOrb)
         {
             if (player.tag == "Player")
             {
-                scenemanager.switchSceneMainMenu();
+                if (scenemanager.returnCurrentScene().buildIndex.Equals(2))
+                {
+                    scenemanager.switchSceneToLevel(3);
+                }
+                if (scenemanager.returnCurrentScene().buildIndex.Equals(3))
+                {
+                    scenemanager.switchSceneToLevel(4);
+                }
+                //add additional levels to switch here
             }
         }
     }
