@@ -35,6 +35,10 @@ public class PortalScene : MonoBehaviour
                 {
                     scenemanager.switchSceneToLevel(4);
                 }
+                if (scenemanager.returnCurrentScene().buildIndex.Equals(4))
+                {
+                    scenemanager.switchSceneMainMenu(); //switch to main menu after finishing
+                }
                 //add additional levels to switch here
             }
         }
