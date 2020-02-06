@@ -10,7 +10,10 @@ public class Timer : MonoBehaviour
     public GameObject player;
     private bool finished = false;
 
-    // Update is called once per frame
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
     void Update()
     {
         if (!finished)
