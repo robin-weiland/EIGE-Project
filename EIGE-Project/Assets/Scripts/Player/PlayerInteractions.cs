@@ -9,6 +9,7 @@ public class PlayerInteractions : MonoBehaviour
         switch (other.tag)
         {
             case "Blade":
+                Physics2D.gravity = new Vector2(0, -9.8f);
                 scenemanager.reloadScene();
                 break;
         }
