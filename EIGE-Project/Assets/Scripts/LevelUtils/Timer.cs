@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(this);
+        DontDestroyOnLoad(transform.root);
     }
     void Update()
     {

@@ -3828,6 +3828,16 @@ PrefabInstance:
       propertyPath: cooldown
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 4924631002428303741, guid: 87ead30e6609b504882dfb86d6dbf2ff,
+        type: 3}
+      propertyPath: shakeDuration
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924631002428303741, guid: 87ead30e6609b504882dfb86d6dbf2ff,
+        type: 3}
+      propertyPath: shakePower
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4924631002428303742, guid: 87ead30e6609b504882dfb86d6dbf2ff,
         type: 3}
       propertyPath: m_Name

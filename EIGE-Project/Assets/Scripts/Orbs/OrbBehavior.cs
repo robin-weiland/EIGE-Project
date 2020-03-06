@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class OrbBehavior : MonoBehaviour
 {
@@ -85,7 +86,6 @@ public class OrbBehavior : MonoBehaviour
             }
         }
     }
-    
     public void drop(PedestalBehavior pedestal)
     {
         if (pickedUp && current == 0)
