@@ -7,7 +7,6 @@ public class Timer : MonoBehaviour
 {
     private float time = 0;
     public Text text;
-    public GameObject player;
     private bool finished = false;
 
     private void Awake()
